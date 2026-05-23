@@ -1,0 +1,60 @@
+skill baby
+{
+	
+   AmmoFactor = 2
+   DamageFactor = 0.5
+   EasyBossBrain
+   SpawnFilter = Baby
+   PicName = "M_JKILL"
+   name = "I'm too young to die!"
+   PlayerClassName = "Tails", "Pup"
+   PlayerClassName = "Sonic", "Hoglet"
+   PlayerClassName = "Knuckles", "Puggle"
+   
+   Key = "i"
+}
+
+skill easy
+{
+	DoubleAmmoFactor = 1.5
+	SpawnFilter = Easy
+	Name = "$MNU_YELLOWBELLIES"
+   PlayerClassName = "Tails", "Pup"
+   PlayerClassName = "Sonic", "Hoglet"
+   PlayerClassName = "Knuckles", "Puggle"
+}
+
+skill normal
+{
+	DoubleAmmoFactor = 1.5
+	SpawnFilter = Normal
+	Name = "$MNU_BRINGEST"
+	playerclassname = "fighter", "$MNU_WARRIOR"
+	playerclassname = "cleric", "$MNU_PRIEST"
+	playerclassname = "mage", "$MNU_SORCERER"
+	DefaultSkill
+}
+
+skill hard
+{
+	DoubleAmmoFactor = 1.5
+	SpawnFilter = Hard
+	Name = "$MNU_SMITE"
+	playerclassname = "fighter", "$MNU_BERSERKER"
+	playerclassname = "cleric", "$MNU_CARDINAL"
+	playerclassname = "mage", "$MNU_WARLOCK"
+}
+
+skill nightmare
+{
+	AmmoFactor = 1.5
+	DoubleAmmoFactor = 1.5
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	SpawnFilter = Nightmare
+	Name = "$MNU_BLACKPLAGUE"
+	playerclassname = "fighter", "$MNU_TITAN"
+	playerclassname = "cleric", "$MNU_POPE"
+	playerclassname = "mage", "$MNU_ARCHMAGE"
+}

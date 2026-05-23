@@ -1,0 +1,23 @@
+Player Thing #'s
+
+I finally thought of 16 different players to be in
+SD2BOM. Even thought we may only stick with 4 or 8,
+I figured I would right this list anyway.
+
+
+1    1       Sonic
+2    2       Tails
+3    3       Knuckles
+4    4       Mighty
+5    4001    Espio
+6    4002    Charmy
+7    4003    Vector
+8    4004    Big
+9    4005    Bark
+10   4006    Bean
+11   4007    Fang
+12   4008    Amy
+13   4009    E-102r
+14   4010    Mecha Sonic
+15   4011    Miles
+16   4012    Mecha Knuckles

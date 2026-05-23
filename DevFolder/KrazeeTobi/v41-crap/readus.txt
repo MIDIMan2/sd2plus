@@ -1,0 +1,152 @@
+Sonic Doom 2: Bots on Mobius V4.1
+By A.J. Freda
+spaddlewit@gmail.com
+See http://www.ssntails.org
+for more info!
+
+MAKE SURE YOU USE THE BAT FILES!!!
+
+May 5th, 2013 update:
+
+Been long enough, hasn't it? Mod updated to be compatible with ZDoom-derived ports.
+FIXED THAT BLASTED CARNIVAL NIGHT ZONE 2 BUG THAT KEPT YOU FROM PROGRESSING!
+Some of the worst graphics have been updated (mainly fonts).
+
+Included the never-released unfinished Launch Base Zone Act 2, plus another
+new secret level that may seem familiar...
+
+---------------------------------------------------------
+This is the sequel to Sonic Doom. EggMan has planned one of his usual
+take-over-mobius domination thing, and this time he has decided to make
+robot duplicates of EVERYBODY, and giving his robots special powers by
+placing a chaos emerald in them! It's up to Sonic, Tails, Knuckles, and
+MechaSonic to stop him!
+
+You can pick between Sonic, Tails, MechaSonic and Knuckles to play by
+running the appropriate BAT file. Here is a summary of each character:
+
+Sonic - Runs Fastest. Can shoot weapons REALLY fast, but can't jump worth
+	beans.
+
+Tails - Runs Slowest. He starts out with 200% health and will be able to
+	fly in the future, enabling you to find secrets! 
+
+Knuckles - Runs Medium. He can punch *REALLY* fast, taking an Anime SWATbot
+	   down in a VERY short time!
+
+MechaSonic - Runs faster than Knuckles, but slower than Sonic. Has all
+	     sorts of cool new weapons. Since he was on Eggman's side once,
+	     he can use nearly all the weapons the enemy 'bots can.
+
+New Weapon List:
+
+Sonic:
+
+Chainsaw        - Spin Attack
+Pistol          - Pea Shooter ^_^
+Shotgun         - Super Pea Shooter!
+Chaingun        - Shoots off rounds of peas!
+Rocket Launcher - Frisbee Razor thrower!
+Plasma Gun      - Arachnotron (PsuedoSuper) plasma
+BFG 9000        - Chaos Emerald (!!)
+
+Tails: (See Sonic)
+
+Knuckles: (See Sonic)
+
+MechaSonic:
+
+Chainsaw         - Lets just say it has something to do with a razor blade and hands....
+Pistol           - A spiffy built-in pea shooter!
+Shotgun          - A better built-in pea shooter!
+Chaingun         - This one fires rounds of peas out his hands!
+Rocket Launcher  - Red Metal Sonic energy pulse.
+Plasma Gun       - Spiked Ball launcher.
+BFG 9000         - MechaSonic 3..2..1 Attack.
+
+
+New Monster List:
+
+Arachnotron     - PsuedoSuper
+Archvile        - Mecha Sonic
+Cyber Demon     - Red Metal Sonic
+Spider Demon    - ??? :)
+Nazis           - ??? (You will love this!)
+Commander Keens - (See the description for Nazis)
+Hell Knight     - Anime SWAT bot
+Baron of Hell   - Red Anime SWAT bot
+Revenant        - PsuedoKnux
+Pain Elemental  - PsuedoTails
+Imps            - Coconuts
+Troopers        - Green Grounder
+Sargent         - Red Grounder
+Chaingun guy    - Grey Grounder
+Demon           - Mini-SWATbot
+
+
+Version History:
+
+V4.0 : We now have a custom EXE, I can finally get things I want done!
+
+V3.9 : Got the music set up for the upcoming LITE release (32 levels, no cd audio)
+
+V3.8 : Added The Tails Zone.
+
+V3.7 : Toxic Caves Act 1 is added.
+
+V3.6 : Carnival Night Zone Act 1 is added, and PsuedoKnux looks more like a robot.
+
+V3.5 : Updated player config files.
+
+V3.4 : Using a spiffy new version of BOOM! Now baddies can't see you when you are underwater!
+
+V3.3 : Congratulations to the winner of the Contest, SatanKillr@aol.com! He made the awesome MAP17 Toxic Caves level! We also welcome another new level, Hydrocity Act 2!
+
+V3.2 : PsuedoSuper now looks more like a robot.
+
+v3.1 : Hydrocity act 1 and special stage added
+
+V3.0 : Added special Boom features to levels, and fixed some bugs in others.
+
+V2.9 : SD2 now uses TeamTNT's BOOM engine!
+
+V2.8 : Changed nearly all the sounds
+
+V2.7 : Added Red Anime SWATbot
+
+V2.6 : Added Gray Anime SWATbot
+
+V2.5 : New Level-Ice Cap Act 2
+
+V2.4 : New Level-Flying Battery Act 1
+
+V2.3 : New Level-Sky Sanctuary
+
+V2.2 : New level-Ice Cap Act 1
+
+V2.1 : Added PsuedoKnux
+
+V2.0 : MECHASONIC IS HERE! Yes! Although his weapons are still in development.
+
+V1.9 : Added EggMan, and the secret characters.
+
+V1.8 : Added Grounder! hehe!
+
+V1.7 : Added Buzzbomer enemy.
+
+V1.6 : Fixed Pulse Gun, Enemies Puff now (Robots don't bleed)
+
+V1.5 : Simplified the startup screen, although if something is wrong you will still get a               message.
+
+V1.4 : Finished ArchVile Mecha Sonic, introduced new enemy: Red Metal Sonic!
+
+V1.3 : Added way cool new weapons!!
+
+V1.2 : Added Knuckles! Now you can play Knuckles!
+
+V1.1 : Added a new enemy - PsuedoSuper! He replaces the baby spiders.
+
+V1.0 : Initial release.... you can't choose knuckles yet, and no sprites (except player) are done yet, but the Archvile Mecha Sonic is halfway done. :)
+
+INSTALL INSTRUCTIONS!!!:
+Unzip this zip file into your DOOM 2 directory, then run "INSTALL".

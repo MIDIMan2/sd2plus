@@ -1,0 +1,207 @@
+MAP00 Sonic World
+
+MAP01 Ice Cap Zone Act 1
+
+MAP02 Ice Cap Zone Act 2
+
+MAP03 Flying Battery Zone Act 1
+
+MAP04 Flying Battery Zone Act 2
+
+MAP05 The Sonic Zone
+
+MAP06 Special Stage
+
+MAP07 Marble Garden Zone Act 1
+
+MAP08 Marble Garden Zone Act 2
+
+MAP09 Carnival Night Zone Act 1
+
+MAP10 Carnival Night Zone Act 2
+
+MAP11 Hydrocity Zone Act 1
+
+MAP12 Hydrocity Zone Act 2
+
+MAP13 Launch Base Zone Act 1
+
+MAP14 Launch Base Zone Act 2
+
+MAP15 Angel Island Zone Act 1
+
+MAP16 Angel Island Zone Act 2
+
+MAP17 Toxic Caves Zone Act 1
+
+MAP18 Toxic Caves Zone Act 2
+
+MAP19 The Tails Zone
+
+MAP20 Special Stage
+
+MAP21 Mushroom Hill Zone Act 1
+
+MAP22 Mushroom Hill Zone Act 2
+
+MAP23 Sandopolis Zone Act 1
+
+MAP24 Sandopolis Zone Act 2
+
+MAP25 Lava Reef Zone Act 1
+
+MAP26 Lava Reef Zone Act 2
+
+MAP27 Hidden Palace Zone Act 1
+
+MAP28 Sky Sanctuary Zone Act 1
+
+MAP29 Death Egg Zone Act 1
+
+MAP30 Death Egg Zone Act 2
+
+MAP27 The Knuckles Zone
+
+MAP28 Special Stage
+
+MAP29 Emerald Hill Zone Act 1
+
+MAP30 Emerald Hill Zone Act 2
+
+MAP31 Chemical Plant Zone Act 1
+
+MAP32 Chemical Plant Zone Act 2
+
+MAP33 Aqua Ruin Zone Act 1
+
+MAP34 Aqua Ruin Zone Act 2
+
+MAP35 Casino Night Zone Act 1
+
+MAP36 Casino Night Zone Act 2
+
+MAP37 Hill Top Zone Act 1
+
+MAP38 Hill Top Zone Act 2
+
+MAP39 Mystic Cave Zone Act 1
+
+MAP40 Mystic Cave Zone Act 2
+
+MAP41 Oil Ocean Zone Act 1
+
+MAP42 Oil Ocean Zone Act 2
+
+MAP43 Metropolis Zone Act 1
+
+MAP44 Metropolis Zone Act 2
+
+MAP45 Metropolis Zone Act 3
+
+MAP46 Sky Chase Zone
+
+MAP47 Wing Fortress Zone
+
+MAP48 Death Egg Zone
+
+MAP49 Palmtree Panic
+
+MAP50 Collision Chaos
+
+MAP51 Tidal Tempest
+
+MAP52 Quartz Quadrant
+
+MAP53 Wacky Workbench
+
+MAP54 Stardust Speedway
+
+MAP55 Stardust Race
+
+MAP56 Metallic Madness
+
+MAP57 Sonic CD Special Stage
+
+MAP58 Isolated Island
+
+MAP59 Botanic Base
+
+MAP60 Speed Slider
+
+MAP61 Amazing Arena
+
+MAP62 Marina Madness
+
+MAP63 Techno Tower
+
+MAP64 World Entrance
+
+MAP65 Red Metal Sonic's Lair
+
+MAP66 Chaotix Special Stage
+
+MAP67 South Island
+
+MAP68 Presidential Palace
+
+MAP69 Forest
+
+MAP70 EggMan Land
+
+MAP71 Icy Tundra
+
+MAP72 The MechaSonic Zone
+
+MAP73 Sonic 2 Special Stage 1
+
+MAP74 Sonic 2 Special Stage 2
+
+MAP75 Sonic 2 Special Stage 3
+
+MAP76 Sonic 2 Special Stage 4
+
+MAP77 The EggMan Zone
+
+MAP78 Special Stage
+
+MAP79 Green Hill Zone Act 1
+
+MAP80 Green Hill Zone Act 2
+
+MAP81 Green Hill Zone Act 3
+
+MAP82 Marble Garden Zone Act 1
+
+MAP83 Marble Garden Zone Act 2
+
+MAP84 Marble Garden Zone Act 3
+
+MAP85 Spring Yard Zone Act 1
+
+MAP86 Spring Yard Zone Act 2
+
+MAP87 Spring Yard Zone Act 3
+
+MAP88 Labyrinth Zone Act 1
+
+MAP89 Labyrinth Zone Act 2
+
+MAP90 Labyrinth Zone Act 3
+
+MAP91 Star Light Zone Act 1
+
+MAP92 Star Light Zone Act 2
+
+MAP93 Star Light Zone Act 3
+
+MAP94 Scrap Brain Zone Act 1
+
+MAP95 Scrap Brain Zone Act 2
+
+MAP96 Scrap Brain Zone Act 3
+
+MAP97 Final Zone
+
+MAP98 Secret 1 (Not telling)
+
+MAP99 Secret 2 (Not telling)

@@ -1,0 +1,1 @@
+zdoom -deh sonic.bex -file sonic.wad sdoom2.wad -turbo 255

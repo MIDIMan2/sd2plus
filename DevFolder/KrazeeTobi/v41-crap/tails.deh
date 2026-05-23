@@ -1,0 +1,52 @@
+Patch File for DeHackEd v3.0
+
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 16
+Patch format = 6
+
+Thing 4 (Archvile)
+Bits = 4211206
+
+Thing 24 (SS Nazi)
+Close attack frame = 736
+Far attack frame = 0
+Exploding frame = 0
+Speed = 30
+Bits = 21495814
+
+Thing 34 (Rocket (in air))
+Initial frame = 102
+Death frame = 104
+
+Thing 35 (Plasma Bullet)
+Initial frame = 667
+Death frame = 669
+
+Thing 43 (BFG Hit)
+Initial frame = 281
+
+Thing 98 (Brown Stub)
+Bits = 0
+
+Thing 106 (Hanging Leg)
+Bits = 768
+
+Frame 632
+Next frame = 634
+
+Frame 634
+Duration = 3
+
+Frame 636
+Next frame = 634
+
+Frame 652
+Next frame = 634
+
+Misc 0
+Max Health = 200
+Max Armor = 200
+Max Soulsphere = 400
+Soulsphere Health = 127
+Megasphere Health = 400

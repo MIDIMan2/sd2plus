@@ -1,0 +1,48 @@
+
+sdmus=Change music
+
+sdspin=Chainsaw
+
+emerald=God mode
+
+unlockgun=Ammo & Keys
+
+gunstuff=Ammo
+
+lookma=No Clipping
+
+ouch=Invincibility
+
+chuckles=Berserk
+
+espio=Invisibility
+
+whoom=Radiation Suit
+
+lemmesee=Auto-map
+
+waypast=Lite-Amp Goggles
+
+spiffy=BEHOLD menu
+
+zoom=Level Warp
+
+sdhere=Player Position
+
+sdem=kill all monsters
+
+ooh=Map cheat
+
+sdhom=HOM autodetector
+
+sdtran=invoke translucency
+
+sdsmart=smart monster toggle
+
+sdpitch=pitched sound toggle
+
+sdspeed=-fast toggle
+
+sdwoah=toggle variable friction effects
+
+sdbudge=toggle pushers

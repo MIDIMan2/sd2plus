@@ -1,0 +1,84 @@
+ACTOR SDKnuxPlayer : DoomPlayer
+{
+  Speed 1
+  Health 100
+  Radius 16
+  Height 56
+  Mass 100
+  PainChance 255
+  Player.DisplayName "Knuckles"
+  Player.StartItem "Pistol"
+  Player.StartItem "Fist"
+  Player.Face "KUX"
+  Player.StartItem "Clip", 50
+  Player.WeaponSlot 1, Fist, Chainsaw
+  Player.WeaponSlot 2, Pistol
+  Player.WeaponSlot 3, Shotgun, SuperShotgun
+  Player.WeaponSlot 4, Chaingun
+  Player.WeaponSlot 5, RocketLauncher
+  Player.WeaponSlot 6, PlasmaRifle
+  Player.WeaponSlot 7, BFG9000
+  Player.ColorRange 112, 127
+  Player.ColorSet 0, "Green",         0x70, 0x7F,  0x72
+  Player.ColorSet 1, "Gray",          0x60, 0x6F,  0x62 // Called "Indigo" originally so as to have a unique initial
+  Player.ColorSet 2, "Brown",         0x40, 0x4F,  0x42
+  Player.ColorSet 3, "Red",           0x20, 0x2F,  0x22
+  // Doom Legacy additions
+  Player.ColorSet 4, "Light Gray",    0x58, 0x67,  0x5A
+  Player.ColorSet 5, "Light Brown",   0x38, 0x47,  0x3A
+  Player.ColorSet 6, "Light Red",     0xB0, 0xBF,  0xB2
+  Player.ColorSet 7, "Light Blue",    0xC0, 0xCF,  0xC2
+
+  States
+  {
+  Spawn:
+    KUXP A -1
+    Loop
+  See:
+    KUXP ABCD 4 
+    Loop
+  Missile:
+    KUXP E 12
+    Goto Spawn
+  Melee:
+    KUXP F 6 BRIGHT
+    Goto Missile
+  Pain:
+    KUXP G 4 
+    KUXP G 4 A_Pain
+    Goto Spawn
+  Death:
+    KUXP H 0 A_PlayerSkinCheck("AltSkinDeath")
+  Death1:
+    KUXP H 10
+    KUXP I 10 A_PlayerScream
+    KUXP J 10 A_NoBlocking
+    KUXP KLM 10
+    KUXP N -1
+    Stop
+  XDeath:
+    KUXP O 0 A_PlayerSkinCheck("AltSkinXDeath")
+  XDeath1:
+    KUXP O 5
+    KUXP P 5 A_XScream
+    KUXP Q 5 A_NoBlocking
+    KUXP RSTUV 5
+    KUXP W -1
+    Stop
+  AltSkinDeath:
+    KUXP H 6
+    KUXP I 6 A_PlayerScream
+    KUXP JK 6
+    KUXP L 6 A_NoBlocking
+    KUXP MNO 6
+    KUXP P -1
+    Stop
+  AltSkinXDeath:
+    KUXP Q 5 A_PlayerScream
+    KUXP R 0 A_NoBlocking
+    KUXP R 5 A_SkullPop
+    KUXP STUVWX 5
+    KUXP Y -1
+    Stop
+  }
+}

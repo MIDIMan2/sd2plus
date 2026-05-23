@@ -1,0 +1,5 @@
+include mapinfos/skills.TAILS
+include mapinfos/maps.TAILS
+include mapinfos/general.TAILS
+include mapinfos/clusters.TAILS
+
