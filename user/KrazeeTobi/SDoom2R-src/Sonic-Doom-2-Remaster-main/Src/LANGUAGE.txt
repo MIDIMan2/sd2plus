@@ -1,0 +1,51 @@
+[enu default] 
+/* This section is both for American English (enu -> en US) and the default language
+   (used if there are no available translations for the user's own language).        */
+
+HUSTR_1 = "Ice Cap Zone Act 1";
+HUSTR_2 = "Ice Cap Zone Act 2";
+HUSTR_3 = "Flying Battery Act 1";
+HUSTR_4 = "Flying Battery Act 2";
+HUSTR_5 = "The Sonic Zone";
+HUSTR_6 = "Special Stage Act 1";
+HUSTR_7 = "Marble Garden Zone Act 1";
+HUSTR_8 = "Marble Garden Zone Act 2";
+HUSTR_9 = "Carnival Night Zone Act 1";
+HUSTR_10 = "Carnival Night Zone Act 2";
+HUSTR_11 = "Hydrocity Zone Act 1";
+HUSTR_12 = "Hydrocity Zone Act 2";
+HUSTR_13 = "Launch Base Zone Act 1";
+HUSTR_14 = "Launch Base Zone Act 2";
+HUSTR_15 = "Angel Island Zone Act 1";
+HUSTR_16 = "Angel Island Zone Act 2";
+HUSTR_17 = "Toxic Caves Zone Act 1";
+HUSTR_18 = "Toxic Caves Zone Act 2";
+HUSTR_19 = "The Tails Zone";
+HUSTR_20 = "Special Stage Act 2";
+HUSTR_21 = "Mushroom Hill Zone Act 1";
+HUSTR_22 = "Mushroom Hill Zone Act 2";
+HUSTR_23 = "Sandopolis Zone Act 1";
+HUSTR_24 = "Sandopolis Zone Act 2";
+HUSTR_25 = "Lava Reef Zone Act 1";
+HUSTR_26 = "Lava Reef Zone Act 2";
+HUSTR_27 = "Hidden Palace Zone";
+HUSTR_28 = "Sky Sanctuary Zone";
+HUSTR_29 = "Death Egg Zone Act 1";
+HUSTR_30 = "Death Egg Zone Act 2";
+HUSTR_31 = "Green Flower Zone";
+HUSTR_32 = "The Knuckles Zone";
+QUITMSG = "please don't leave, there's more\nrobots to short-circuit!";
+QUITMSG1 = "let's beat it -- this is turning\ninto a metal-bath!";
+QUITMSG2 = "i wouldn't leave if i were you.\ndos is much worse.";
+QUITMSG3 = "you're trying to say you like srb2tp\nbetter than this, right?";
+QUITMSG4 = "don't leave yet -- there's a\nblackeggman around that corner!";
+QUITMSG5 = "ya know, next time you come in here\ni'm gonna spin ya.";
+QUITMSG6 = "go ahead and leave. see if i care.";
+QUITMSG7 = "you want to quit?\nthen, go right ahead!";
+QUITMSG8 = "don't go now, there's a\nred metal sonic waiting\nat the desktop!";
+QUITMSG9 = "get outta here and go back\nto your boring programs.";
+QUITMSG10 = "if i were your boss, i'd\nco-op ya in a minute!";
+QUITMSG11 = "look bud. you leave now\nandyouforfeit your progress!";
+QUITMSG12 = "just leave. when you come\nback, I'll be waiting with a bat.";
+QUITMSG13 = "you're lucky i don't spin\nyou for thinking about leaving.";
+QUITMSG14 = "Eggrock would be a lot\neasier with a shotgun.";

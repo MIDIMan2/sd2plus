@@ -1,0 +1,5 @@
+ACTOR Coconut : DoomImpBall replaces DoomImpBall
+{
+Game Doom
+  RenderStyle "Normal"
+}

@@ -1,0 +1,5 @@
+ACTOR GFZFlower : HeartColumn replaces HeartColumn
+{
+Game Doom
+  -SOLID
+}

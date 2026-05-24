@@ -1,0 +1,13 @@
+// Players
+#include "actors/players/sonic"
+#include "actors/players/miles" //"Why is he called Miles and not Tails?" idk lmao
+#include "actors/players/knux"
+#include "actors/mapstuff/Blowyup"
+
+// Projectiles
+#include "actors/projectiles/impfire"
+#include "actors/projectiles/bonertracer" //  I'm sorry but I couldn't spell Revenant. 
+#include "actors/projectiles/baron"
+
+// Projectiles
+#include "actors/decorations/GFZFlower"

@@ -1,0 +1,72 @@
+/***** Blood Decals ********************************************************/
+/*
+ * Blood splats just stick to the walls.
+ * Blood smears crawl down walls a bit like in Blood.
+ *
+ * These do not need generators; the engine will create them automatically
+ * when something bleeds. In the future, the shade color will be ignored,
+ * and the actor's blood color will be used instead.
+ */
+decal BloodSplat1
+{
+	pic TNT1A0
+}
+
+decal BloodSplat2
+{
+	pic TNT1A0
+}
+
+decal BloodSplat3
+{
+	pic TNT1A0
+}
+
+decal BloodSplat4
+{
+	pic TNT1A0
+}
+
+decal BloodSplat5
+{
+	pic TNT1A0
+}
+
+decal BloodSplat6
+{
+	pic TNT1A0
+}
+
+decal BloodSplat7
+{
+	pic TNT1A0
+}
+
+// The smaller blood splats are more common than the big ones.
+
+decalgroup BloodSplat
+{
+	BloodSplat1	2
+	BloodSplat2	1
+	BloodSplat3	5
+	BloodSplat4	5
+	BloodSplat5	5
+	BloodSplat6	5
+	BloodSplat7	6
+}
+
+decal BloodSmear1
+{
+	pic TNT1A0
+}
+
+decal BloodSmear2
+{
+	pic TNT1A0
+}
+
+decalgroup BloodSmear
+{
+	BloodSmear1	1
+	BloodSmear2	1
+}

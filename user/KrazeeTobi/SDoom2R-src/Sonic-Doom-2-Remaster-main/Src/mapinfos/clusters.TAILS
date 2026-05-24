@@ -1,0 +1,58 @@
+// DOOM II first cluster (up thru level 6)
+
+cluster 5
+{
+	flat = "$BGFLAT06"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C1TEXT"
+
+}
+
+// DOOM II second cluster (up thru level 11)
+
+cluster 6
+{
+	flat = "$BGFLAT11"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C2TEXT"
+
+}
+
+// DOOM II third cluster (up thru level 20)
+
+cluster 7
+{
+	flat = "$BGFLAT20"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C3TEXT"
+}
+
+// DOOM II fourth cluster (up thru level 30)
+
+cluster 8
+{
+	flat = "$BGFLAT30"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C4TEXT"
+}
+
+// DOOM II fifth cluster (level 31)
+
+cluster 9
+{
+	flat = "$BGFLAT15"
+	music = "$MUSIC_READ_M"
+	entertext = "It's time to go back to the future!"
+}
+
+// DOOM II sixth cluster (level 32)
+
+cluster 10
+{
+	flat = "$BGFLAT31"
+	music = "$MUSIC_READ_M"
+	entertext = "I'm proud of this level.", "Just look at the automap."
+}
+
+
+

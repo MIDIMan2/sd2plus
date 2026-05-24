@@ -1,0 +1,84 @@
+ACTOR SDSonicPlayer : PlayerPawn
+{
+  Speed 1
+  Health 100
+  Radius 16
+  Height 56
+  Mass 100
+  PainChance 255
+  Player.DisplayName "Sonic"
+  Player.StartItem "Pistol"
+  Player.StartItem "Fist"
+  Player.Face "SON"
+  Player.StartItem "Clip", 50
+  Player.WeaponSlot 1, Fist, Chainsaw
+  Player.WeaponSlot 2, Pistol
+  Player.WeaponSlot 3, Shotgun, SuperShotgun
+  Player.WeaponSlot 4, Chaingun
+  Player.WeaponSlot 5, RocketLauncher
+  Player.WeaponSlot 6, PlasmaRifle
+  Player.WeaponSlot 7, BFG9000
+  Player.ColorRange 112, 127
+  Player.ColorSet 0, "Green",         0x70, 0x7F,  0x72
+  Player.ColorSet 1, "Gray",          0x60, 0x6F,  0x62 // Called "Indigo" originally so as to have a unique initial
+  Player.ColorSet 2, "Brown",         0x40, 0x4F,  0x42
+  Player.ColorSet 3, "Red",           0x20, 0x2F,  0x22
+  // Doom Legacy additions
+  Player.ColorSet 4, "Light Gray",    0x58, 0x67,  0x5A
+  Player.ColorSet 5, "Light Brown",   0x38, 0x47,  0x3A
+  Player.ColorSet 6, "Light Red",     0xB0, 0xBF,  0xB2
+  Player.ColorSet 7, "Light Blue",    0xC0, 0xCF,  0xC2
+
+  States
+  {
+  Spawn:
+    SONP A -1
+    Loop
+  See:
+    SONP ABCD 4 
+    Loop
+  Missile:
+    SONP E 12
+    Goto Spawn
+  Melee:
+    SONP F 6 BRIGHT
+    Goto Missile
+  Pain:
+    SONP G 4 
+    SONP G 4 A_Pain
+    Goto Spawn
+  Death:
+    SONP H 0 A_PlayerSkinCheck("AltSkinDeath")
+  Death1:
+    SONP H 10
+    SONP I 10 A_PlayerScream
+    SONP J 10 A_NoBlocking
+    SONP KLM 10
+    SONP N -1
+    Stop
+  XDeath:
+    SONP O 0 A_PlayerSkinCheck("AltSkinXDeath")
+  XDeath1:
+    SONP O 5
+    SONP P 5 A_XScream
+    SONP Q 5 A_NoBlocking
+    SONP RSTUV 5
+    SONP W -1
+    Stop
+  AltSkinDeath:
+    SONP H 6
+    SONP I 6 A_PlayerScream
+    SONP JK 6
+    SONP L 6 A_NoBlocking
+    SONP MNO 6
+    SONP P -1
+    Stop
+  AltSkinXDeath:
+    SONP Q 5 A_PlayerScream
+    SONP R 0 A_NoBlocking
+    SONP R 5 A_SkullPop
+    SONP STUVWX 5
+    SONP Y -1
+    Stop
+  }
+}

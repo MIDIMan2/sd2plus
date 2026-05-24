@@ -1,0 +1,81 @@
+# =========================================================
+# Sonic Doom 2: Bots On Mobius Game Patch
+# =========================================================
+# This is a game patch for use with TeamTNT's Boom engine.
+# You are free to edit this file, but make sure that you
+# understand how BEX scriping works. Read the "Boomdeh.txt"
+# file for scripting instructions and examples.
+
+INCLUDE tails.deh
+
+[STRINGS]
+SAVEGAMENAME = Tails
+STARTUP1 = ===============================================================================\nSonic Doom 2: Bots On Mobius v4.1\nCopyright(c) 1997-1998, Super Sonic Team\n===============================================================================\nPlaying as Tails\n\nLoading...
+CC_ZOMBIE = Pistol Grounder
+CC_SHOTGUN = Shotgun Grounder
+CC_HEAVY = Chaingun Grounder
+CC_IMP = Coconuts
+CC_DEMON = Mini-Bot
+CC_LOST = SuperFlickies
+CC_CACO = Buzzbomber
+CC_HELL = Red Swatbot
+CC_BARON = Grey Swatbot
+CC_ARACH = PsuedoSuper
+CC_PAIN = PsuedoTails
+CC_REVEN = PsuedoKnuckles
+CC_MANCU = ---
+CC_ARCH = Metal Sonic
+CC_SPIDER = Black Eggman
+CC_CYBER = Red Metal Sonic
+CC_HERO = Miles "Tails" Power
+PLAY = PLY2
+VILE = MSON
+SKEL = PKNX
+HEAD = BUZZ
+BOSS = STB2
+BOS2 = STB1
+CYBR = REDM
+SSWV = MRIO
+ARM1 = CEM1
+ARM2 = CEM2
+BON1 = RING
+SOUL = SEM1
+PINV = SEM2
+COLU = SSTP
+POL4 = MPOL
+COL2 = RSPH
+CBRA = STRP
+ELEC = SNWT
+PD_BLUEO = You need a blue emerald key to do this
+PD_REDO = You need a red emerald key to do this
+PD_YELLOWO = You need a yellow emerald key to do this
+PD_BLUEK = You need a blue emerald key to open door
+PD_REDK = You need a red emerald key to open door
+PD_YELLOWK = You need a yellow emerald key to open door
+PD_BLUEC = You need a blue emerald key to open door
+PD_REDC = You need a red emerald key to open door
+PD_YELLOWC = You need a yellow emerald key to open door
+PD_ANY = Any emerald key will open this door
+PD_ALL3 = You need all three emerald keys to open this door
+PD_ALL6 = You need all six emerald keys to open this door
+GOTARMOR = Picked up the chaos emerald - plus 100 armor
+GOTMEGA = Picked up the mega chaos emerald - plus 200 armor
+GOTHTHBONUS = Picked up a gold ring - plus 1 health
+GOTARMBONUS = Picked up a grey ring - plus 1 armor
+GOTSTIM = Picked up the ringbox - plus 10 health
+GOTMEDINEED = Picked up silver ringbox that you REALLY needed - plus 25 health
+GOTMEDIKIT = Picked up silver ringbox - plus 25 health
+GOTSUPER = Super Ring charge - plus 127 health
+GOTBLUECARD = Picked up the blue emerald key
+GOTREDCARD = Picked up the red emerald key
+GOTYELWCARD = Picked up the yellow emerald key
+GOTBLUESKUL = Picked up the blue emerald key
+GOTREDSKULL = Picked up the red emerald key
+GOTYELWSKUL = Picked up the yellow emerald key
+GOTINVUL = Invincible!
+GOTINVIS = Invisibility
+GOTSUIT = Picked up the shield
+GOTCHAINSAW = Spinattack
+GOTLAUNCHER = Pulse Launcher
+GOTMSPHERE = MegaRing!!
+STSTR_BEHOLD = ouch,chuckles,espio,whoom,lemmesee,waypast
