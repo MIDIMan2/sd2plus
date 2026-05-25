@@ -4370,6 +4370,26 @@ Texture WING7, 128, 128
 	Patch WING7, 0, 0
 }
 
+Texture GHZ1, 64, 64
+{
+	Patch GHZ1, 0, 0
+}	
+
+Texture GHZ2, 64, 64
+{
+	Patch GHZ2, 0, 0
+}	
+
+Texture GHZ3, 64, 64
+{
+	Patch GHZ3, 0, 0
+}	
+
+Texture GHZ4, 64, 64
+{
+	Patch GHZ4, 0, 0
+}	
+
 // ova pico textures
 // yummy ehz, labyrinth, scrap brain, and.. more.! hahaha! yay! i'm so happy with my labyrinth. gahaha! this time i am Ready for You !
 
