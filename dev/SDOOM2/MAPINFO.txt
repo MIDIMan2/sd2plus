@@ -11,7 +11,7 @@ defaultmap
 }
 
 // Sonic World
-map MAP00 lookup "HUSTR_1"
+map MAP00 lookup "HUSTR_0"
 {
 	titlepatch = "CWILV00"
 	next = "MAP01"
@@ -19,7 +19,7 @@ map MAP00 lookup "HUSTR_1"
 	sky1 = "SKY0"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_SWORLD"
         ForceNoSkyStretch
 }
 
@@ -444,7 +444,7 @@ map MAP32 lookup "HUSTR_32"
 }
 
 // Emerald Hill 1
-map MAP33 lookup "HUSTR_1"
+map MAP33 lookup "HUSTR_33"
 {
 	titlepatch = "CWILV00"
 	next = "MAP34"
@@ -452,12 +452,12 @@ map MAP33 lookup "HUSTR_1"
 	sky1 = "SKY33"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_EHZ"
         ForceNoSkyStretch
 }
 
 // Emerald Hill 2
-map MAP34 lookup "HUSTR_1"
+map MAP34 lookup "HUSTR_34"
 {
 	titlepatch = "CWILV00"
 	next = "MAP35"
@@ -470,7 +470,7 @@ map MAP34 lookup "HUSTR_1"
 }
 
 // Chemical Plant 1
-map MAP35 lookup "HUSTR_1"
+map MAP35 lookup "HUSTR_35"
 {
 	titlepatch = "CWILV00"
 	next = "MAP36"
@@ -478,12 +478,12 @@ map MAP35 lookup "HUSTR_1"
 	sky1 = "SKY35"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_CPZ1"
         ForceNoSkyStretch
 }
 
 // Chemical Plant 2
-map MAP36 lookup "HUSTR_1"
+map MAP36 lookup "HUSTR_36"
 {
 	titlepatch = "CWILV00"
 	next = "MAP37"
@@ -491,12 +491,12 @@ map MAP36 lookup "HUSTR_1"
 	sky1 = "SKY36"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_CPZ2"
         ForceNoSkyStretch
 }
 
 // Aquatic Ruin 1
-map MAP37 lookup "HUSTR_1"
+map MAP37 lookup "HUSTR_37"
 {
 	titlepatch = "CWILV00"
 	next = "MAP38"
@@ -509,7 +509,7 @@ map MAP37 lookup "HUSTR_1"
 }
 
 // Aquatic Ruin 2
-map MAP38 lookup "HUSTR_1"
+map MAP38 lookup "HUSTR_38"
 {
 	titlepatch = "CWILV00"
 	next = "MAP39"
@@ -522,7 +522,7 @@ map MAP38 lookup "HUSTR_1"
 }
 
 // Casino Night 1
-map MAP39 lookup "HUSTR_1"
+map MAP39 lookup "HUSTR_39"
 {
 	titlepatch = "CWILV00"
 	next = "MAP40"
@@ -535,7 +535,7 @@ map MAP39 lookup "HUSTR_1"
 }
 
 // Casino Night 2
-map MAP40 lookup "HUSTR_1"
+map MAP40 lookup "HUSTR_40"
 {
 	titlepatch = "CWILV00"
 	next = "MAP41"
@@ -626,7 +626,7 @@ map MAP46 lookup "HUSTR_1"
 }
 
 // Metropolis 1
-map MAP47 lookup "HUSTR_1"
+map MAP47 lookup "HUSTR_47"
 {
 	titlepatch = "CWILV00"
 	next = "MAP48"
@@ -639,7 +639,7 @@ map MAP47 lookup "HUSTR_1"
 }
 
 // Metropolis 2
-map MAP48 lookup "HUSTR_1"
+map MAP48 lookup "HUSTR_48"
 {
 	titlepatch = "CWILV00"
 	next = "MAP49"
@@ -652,7 +652,7 @@ map MAP48 lookup "HUSTR_1"
 }
 
 // Metropolis 3
-map MAP49 lookup "HUSTR_1"
+map MAP49 lookup "HUSTR_49"
 {
 	titlepatch = "CWILV00"
 	next = "MAP50"
@@ -1212,7 +1212,7 @@ map MAP91 lookup "HUSTR_1"
 }
 
 // Labyrinth 1
-map MAP92 lookup "HUSTR_1"
+map MAP92 lookup "HUSTR_92"
 {
 	titlepatch = "CWILV00"
 	next = "MAP93"
@@ -1225,7 +1225,7 @@ map MAP92 lookup "HUSTR_1"
 }
 
 // Labyrinth 2
-map MAP93 lookup "HUSTR_1"
+map MAP93 lookup "HUSTR_93"
 {
 	titlepatch = "CWILV00"
 	next = "MAP94"
@@ -1238,7 +1238,7 @@ map MAP93 lookup "HUSTR_1"
 }
 
 // Labyrinth 3
-map MAP94 lookup "HUSTR_1"
+map MAP94 lookup "HUSTR_94"
 {
 	titlepatch = "CWILV00"
 	next = "MAP95"
@@ -1342,7 +1342,7 @@ map MAPA1 lookup "HUSTR_1"
 }
 
 // Bob-Omb Battlefield
-map MAPA2 lookup "HUSTR_1"
+map MAPA2 lookup "HUSTR_102"
 {
 	titlepatch = "CWILV00"
 	next = "MAP01"

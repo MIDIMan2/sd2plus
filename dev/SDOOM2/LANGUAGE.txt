@@ -2,6 +2,7 @@
 /* This section is both for American English (enu -> en US) and the default language
    (used if there are no available translations for the user's own language).        */
 
+HUSTR_0 = "Sonic World";
 HUSTR_1 = "Ice Cap Zone Act 1";
 HUSTR_2 = "Ice Cap Zone Act 2";
 HUSTR_3 = "Flying Battery Act 1";
@@ -32,8 +33,25 @@ HUSTR_27 = "Hidden Palace Zone Act 1";
 HUSTR_28 = "Sky Sanctuary Zone Act 1";
 HUSTR_29 = "Death Egg Zone Act 1";
 HUSTR_30 = "Death Egg Zone Act 2";
-HUSTR_31 = "Greenflower";
-HUSTR_32 = "The Knuckles Zone";
+HUSTR_31 = "The Knuckles Zone";
+HUSTR_32 = "Special Stage";
+HUSTR_33 = "Emerald Hill Zone Act 1";
+HUSTR_34 = "Emerald Hill Zone Act 2";
+HUSTR_35 = "Chemical Plant Zone Act 1";
+HUSTR_36 = "Chemical Plant Zone Act 2";
+HUSTR_37 = "Aquatic Ruin Zone Act 1";
+HUSTR_38 = "Aquatic Ruin Zone Act 2";
+HUSTR_39 = "Casino Night Zone Act 1";
+HUSTR_40 = "Casino Night Zone Act 2";
+HUSTR_45 = "Oil Ocean Zone Act 1";
+HUSTR_46 = "Oil Ocean Zone Act 2";
+HUSTR_47 = "Metropolis Zone Act 1";
+HUSTR_48 = "Metropolis Zone Act 2";
+HUSTR_49 = "Metropolis Zone Act 3";
+HUSTR_92 = "Labyrinth Zone Act 1";
+HUSTR_93 = "Labyrinth Zone Act 2";
+HUSTR_94 = "Labyrinth Zone Act 3";
+HUSTR_102 = "Bob-Omb Battlefield";
 QUITMSG = "please don't leave, there's more\nrobots to short-circuit!";
 QUITMSG1 = "let's beat it -- this is turning\ninto a metal-bath!";
 QUITMSG2 = "i wouldn't leave if i were you.\ndos is much worse.";
