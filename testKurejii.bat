@@ -1,3 +1,4 @@
+REM sd2plus testing -- originally by krazeetobi
 cd D:\sd2plus-env
 del SDOOM2.pk3
 del SONIC.pk3
