@@ -1,1 +1,2 @@
 texture CHMPLA1 	range CHMPLA3  	tics 18
+flat MACK1		range MACK3	tics 10
