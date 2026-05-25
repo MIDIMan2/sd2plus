@@ -4388,6 +4388,11 @@ Texture LBYR1, 64, 64
 	Patch LBYR1, 0, 0
 }	
 
+Texture LBYR2, 64, 64
+{
+	Patch LBYR2, 0, 0
+}	
+
 Texture MARBL01, 64, 64
 {
 	Patch MARBL01, 0, 0
