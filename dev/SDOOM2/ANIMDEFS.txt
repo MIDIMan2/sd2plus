@@ -1,0 +1,1 @@
+texture CHMPLA1 	range CHMPLA3  	tics 18

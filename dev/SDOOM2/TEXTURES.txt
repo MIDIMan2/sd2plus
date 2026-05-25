@@ -4515,6 +4515,11 @@ Texture MARBL05, 64, 64
 	Patch MARBL05, 0, 0
 }
 
+Texture MARBL06, 64, 64
+{
+	Patch MARBL06, 0, 0
+}
+
 // pray 96x96 images work roboblaster :broken_heart:	
 Texture MARBLB1, 96, 96
 {
@@ -4535,6 +4540,96 @@ Texture SCRAP2, 64, 64
 Texture SKY95, 256, 128
 {
 	Patch SKY95, 0, 0
+}
+
+// why'd i use a separate name for these?
+// well, i didn't see the existing chemical plant stuff.
+// so, that's Why.
+Texture CHMPL1, 128, 128
+{
+	Patch CHMPL1, 0, 0
+}
+
+Texture CHMPL2, 128, 128
+{
+	Patch CHMPL2, 0, 0
+}
+
+Texture CHMPL3, 128, 64
+{
+	Patch CHMPL3, 0, 0
+}
+
+Texture CHMPL4, 128, 128
+{
+	Patch CHMPL4, 0, 0
+}
+
+Texture CHMPL5, 128, 128
+{
+	Patch CHMPL5	, 0, 0
+}
+
+Texture CHMPL6, 128, 128
+{
+	Patch CHMPL6, 0, 0
+}
+
+Texture CHMPL7, 128, 64
+{
+	Patch CHMPL7, 0, 0
+}
+
+Texture CHMPL8, 128, 128
+{
+	Patch CHMPL8, 0, 0
+}
+
+Texture CHMPL9, 128, 128
+{
+	Patch CHMPL9, 0, 0
+}
+
+Texture CHMPL10, 128, 128
+{
+	Patch CHMPL10, 0, 0
+}
+
+Texture CHMPLA1, 128, 128
+{
+	Patch CHMPLA1, 0, 0
+}
+
+Texture CHMPLA2, 128, 128
+{
+	Patch CHMPLA2, 0, 0
+}
+
+Texture CHMPLA3, 128, 128
+{
+	Patch CHMPLA3, 0, 0
+}
+
+Texture SYZ1, 64, 64
+{
+	Patch SYZ1, 0, 0
+}
+
+// skies
+
+Texture SKY92, 256, 128
+{
+	Patch SKY92, 0, 0
+}
+
+Texture SKY93, 256, 128
+{
+	Patch SKY93, 0, 0
+}
+
+Texture SKY94, 256, 128
+{
+	Patch SKY94, 0, 0
 }
 
 Texture SKY96, 256, 128
