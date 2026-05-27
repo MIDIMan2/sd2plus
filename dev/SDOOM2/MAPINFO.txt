@@ -1,3 +1,8 @@
+gameinfo
+{
+	PlayerClasses = "SD2SonicPlayer", "SD2TailsPlayer", "SD2KnuxPlayer", "SD2MetalPlayer"
+}
+
 clearepisodes
 episode map01
 {
