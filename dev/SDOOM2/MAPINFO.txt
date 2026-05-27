@@ -92,8 +92,8 @@ map MAP05 lookup "HUSTR_5"
 map MAP06 lookup "HUSTR_6"
 {
 	titlepatch = "CWILV05"
-	next = "MAP08"
-	secretnext = "MAP08"
+	next = "MAP07"
+	secretnext = "MAP07"
 	sky1 = "SKY6"
 	cluster = 8
 	par = 150
@@ -217,7 +217,7 @@ map MAP15 lookup "HUSTR_15"
 	sky1 = "SKY15"
 	cluster = 8
 	par = 210
-	music = "D_AGZ1"
+	music = "D_AIZ1"
         ForceNoSkyStretch
 }
 
@@ -230,7 +230,7 @@ map MAP16 lookup "HUSTR_16"
 	sky1 = "SKY16"
 	cluster = 8
 	par = 150
-	music = "D_AGZ2"
+	music = "D_AIZ2"
         ForceNoSkyStretch
 }
 
@@ -243,7 +243,7 @@ map MAP17 lookup "HUSTR_17"
 	sky1 = "SKY17"
 	cluster = 8
 	par = 420
-	music = "D_TCZ1"
+	music = "D_TCZ"
         ForceNoSkyStretch
 }
 
@@ -256,7 +256,7 @@ map MAP18 lookup "HUSTR_18"
 	sky1 = "SKY18"
 	cluster = 8
 	par = 150
-	music = "D_TCZ2"
+	music = "D_TCZ"
         ForceNoSkyStretch
 }
 
@@ -407,8 +407,8 @@ map MAP29 lookup "HUSTR_29"
 map MAP30 lookup "HUSTR_30"
 {
 	titlepatch = "CWILV29"
-	next = "EndGameC"
-	secretnext = "EndGameC"
+	next = "MAP31"
+	secretnext = "MAP31"
 	sky1 = "SKY30"
 	cluster = 8
 	par = 180
@@ -421,7 +421,7 @@ map MAP30 lookup "HUSTR_30"
 map MAP31 lookup "HUSTR_31"
 {
 	titlepatch = "CWILV30"
-	next = "MAP16"
+	next = "MAP32"
 	secretnext = "MAP32"
 	sky1 = "SKY31"
 	cluster = 9
@@ -434,8 +434,8 @@ map MAP31 lookup "HUSTR_31"
 map MAP32 lookup "HUSTR_32"
 {
 	titlepatch = "CWILV31"
-	next = "MAP16"
-	secretnext = "MAP16"
+	next = "MAP33"
+	secretnext = "MAP33"
 	sky1 = "SKY32"
 	cluster = 10
 	par = 30
@@ -504,7 +504,7 @@ map MAP37 lookup "HUSTR_37"
 	sky1 = "SKY37"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_ARZ1"
         ForceNoSkyStretch
 }
 
@@ -517,7 +517,7 @@ map MAP38 lookup "HUSTR_38"
 	sky1 = "SKY38"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_ARZ2"
         ForceNoSkyStretch
 }
 
@@ -530,7 +530,7 @@ map MAP39 lookup "HUSTR_39"
 	sky1 = "SKY39"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_CASINO1"
         ForceNoSkyStretch
 }
 
@@ -543,7 +543,7 @@ map MAP40 lookup "HUSTR_40"
 	sky1 = "SKY40"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_CASINO2"
         ForceNoSkyStretch
 }
 
@@ -556,7 +556,7 @@ map MAP41 lookup "HUSTR_1"
 	sky1 = "SKY41"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_HTZ1"
         ForceNoSkyStretch
 }
 
@@ -569,7 +569,7 @@ map MAP42 lookup "HUSTR_1"
 	sky1 = "SKY42"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_HTZ2"
         ForceNoSkyStretch
 }
 
@@ -816,7 +816,7 @@ map MAP61 lookup "HUSTR_1"
 	sky1 = "SKY1"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_SPEC4"
         ForceNoSkyStretch
 }
 
@@ -934,7 +934,7 @@ map MAP70 lookup "HUSTR_1"
 	sky1 = "SKY1"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_SPEC5"
         ForceNoSkyStretch
 }
 
@@ -1025,7 +1025,7 @@ map MAP77 lookup "HUSTR_1"
 	sky1 = "SKY1"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_SPEC6"
         ForceNoSkyStretch
 }
 
