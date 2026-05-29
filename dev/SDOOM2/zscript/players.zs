@@ -3,10 +3,47 @@
 
 class SD2Player : DoomPlayer
 {
+	uint ClipCapacity;
+	property ClipCapacity: ClipCapacity;
+	uint ShellCapacity;
+	property ShellCapacity: ShellCapacity;
+	uint RocketCapacity;
+	property RocketCapacity: RocketCapacity;
+	uint CellCapacity;
+	property CellCapacity: CellCapacity;
+	
+	virtual void SD2SetAmmoCapacity(uint mul = 1)
+	{
+		self.SetAmmoCapacity("Clip", ClipCapacity * mul);
+		self.SetAmmoCapacity("Shell", ShellCapacity * mul);
+		self.SetAmmoCapacity("RocketAmmo", RocketCapacity * mul);
+		self.SetAmmoCapacity("Cell", CellCapacity * mul);
+	}
+	
+	override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		SD2SetAmmoCapacity();
+	}
+
 	Default
 	{
 		Player.MaxHealth 200;
 		Player.CrouchSprite "";
+// 		Player.StartItem "SD2Pistol";
+// 		Player.StartItem "Clip", 50;
+// 		Player.StartItem "Fist";
+		Player.WeaponSlot 1, "Fist", "SD2Chainsaw";
+// 		Player.WeaponSlot 2, "SD2Pistol";
+// 		Player.WeaponSlot 3, "SD2Shotgun", "SD2SuperShotgun";
+// 		Player.WeaponSlot 4, "SD2Chaingun";
+// 		Player.WeaponSlot 5, "SD2RocketLauncher";
+// 		Player.WeaponSlot 6, "SD2PlasmaRifle";
+// 		Player.WeaponSlot 7, "SD2BFG9000";
+		SD2Player.ClipCapacity 200;
+		SD2Player.ShellCapacity 50;
+		SD2Player.RocketCapacity 50;
+		SD2Player.CellCapacity 300;
 	}
 }
 
@@ -18,6 +55,10 @@ class SD2SonicPlayer : SD2Player
 		Player.DisplayName "Sonic";
 		Player.Face "STF";
 		Player.ColorRange 192,207;
+		SD2Player.ClipCapacity 100;
+		SD2Player.ShellCapacity 30;
+		SD2Player.RocketCapacity 30;
+		SD2Player.CellCapacity 100;
 	}
 	
 	States

@@ -1,1 +1,5 @@
+#include "zscript/replacements.zs"
+#include "zscript/projectiles.zs"
+#include "zscript/enemies.zs"
+#include "zscript/weapons.zs"
 #include "zscript/players.zs"
