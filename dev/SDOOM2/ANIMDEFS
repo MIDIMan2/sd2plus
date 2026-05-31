@@ -1,3 +1,4 @@
 texture CHMPLA1 	range CHMPLA3  	tics 18
 flat MACK1		range MACK3	tics 10
+flat GWATER1		range GWATER4	tics 5
 switch doom 1 SW1CHEM on pic SW2CHEM tics 0

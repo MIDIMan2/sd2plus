@@ -192,7 +192,7 @@ Texture SKY31, 256, 128
 
 Texture SKY32, 256, 128
 {
-	Patch SKY2, 0, 0
+	Patch SKY32, 0, 0
 }
 
 Texture SKY33, 256, 128
@@ -374,6 +374,31 @@ Texture SKYA0, 256, 128
 Texture SPECIAL2, 128, 128
 {
 	Patch SPECIAL2, 0, 0
+}
+
+Texture SPECIAL3, 64, 64
+{
+	Patch SPECIAL3, 0, 0
+}
+
+Texture SPECIAL4, 64, 64
+{
+	Patch SPECIAL4, 0, 0
+}
+
+Texture SPECIAL5, 64, 64
+{
+	Patch SPECIAL5, 0, 0
+}
+
+Texture SPECIAL6, 64, 64
+{
+	Patch SPECIAL6, 0, 0
+}
+
+Texture SPECIAL7, 64, 64
+{
+	Patch SPECIAL7, 0, 0
 }
 
 Texture YLW, 16, 8
@@ -4513,8 +4538,32 @@ Texture GHZ4, 64, 64
 	Patch GHZ4, 0, 0
 }	
 
-// ova pico textures
-// yummy ehz, labyrinth, scrap brain, and.. more.! hahaha! yay! i'm so happy with my labyrinth. gahaha! this time i am Ready for You !
+Texture SSB1, 128, 128
+{
+	Patch SSB1, 0, 0
+}
+
+Texture SSB2, 64, 64
+{
+	Patch SSB2, 0, 0
+}
+
+Texture SSB3, 128, 128
+{
+	Patch SSB3, 0, 0
+}
+
+Texture SSB4, 256, 64
+{
+	Patch SSB4, 0, 0
+}
+
+Texture SSB5, 64, 64
+{
+	Patch SSB5, 0, 0
+}
+
+// Sorry mate but I don't want to segregate the textures
 
 Texture EMHILL1, 128, 128
 {
@@ -4524,6 +4573,16 @@ Texture EMHILL1, 128, 128
 Texture EMHILL2, 64, 64
 {
 	Patch EMHILL2, 0, 0
+}
+
+Texture EMHILL3, 128, 128
+{
+	Patch EMHILL3, 0, 0
+}
+
+Texture EMHILL4, 64, 64
+{
+	Patch EMHILL4, 0, 0
 }
 
 Texture LBYR1, 64, 64
@@ -4658,7 +4717,27 @@ Texture SYZ1, 64, 64
 	Patch SYZ1, 0, 0
 }
 
+Texture PPANIC1, 64, 64
+{
+	Patch PPANIC1, 0, 0
+}	
+
+Texture PPANIC2, 64, 64
+{
+	Patch PPANIC2, 0, 0
+}	
+
+Texture PPANIC3, 64, 64
+{
+	Patch PPANIC3, 0, 0
+}
+
 // skies
+
+Texture SKY53, 256, 128
+{
+	Patch SKY53, 0, 0
+}
 
 Texture SKY92, 256, 128
 {

@@ -17,3 +17,6 @@ DOOM2.WAD
 *.dbs
 *.backup2
 *.backup3
+*.tmp1
+*.tmp2
+*.tmp3

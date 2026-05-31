@@ -1,3 +1,8 @@
+// TODO: Convert all DECORATE to ZScript in a future commit
+// as we're aiming for UZDoom compatibility according to Sauce
+
+// DECORATE got deprecated in GZDoom 2.3.0 so we probably shouldn't be using it
+
 Actor DH_Archvile : Archvile replaces Archvile 64
 {
 	+NOGRAVITY
