@@ -1100,7 +1100,7 @@ map MAP82 lookup "HUSTR_1"
 }
 
 // Green Hill 1
-map MAP83 lookup "HUSTR_1"
+map MAP83 lookup "HUSTR_83"
 {
 	titlepatch = "CWILV00"
 	next = "MAP84"
@@ -1108,12 +1108,12 @@ map MAP83 lookup "HUSTR_1"
 	sky1 = "SKY83"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_GHZ1"
         ForceNoSkyStretch
 }
 
 // Green Hill 2
-map MAP84 lookup "HUSTR_1"
+map MAP84 lookup "HUSTR_84"
 {
 	titlepatch = "CWILV00"
 	next = "MAP85"
@@ -1121,12 +1121,12 @@ map MAP84 lookup "HUSTR_1"
 	sky1 = "SKY84"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_GHZ2"
         ForceNoSkyStretch
 }
 
 // Green Hill 3
-map MAP85 lookup "HUSTR_1"
+map MAP85 lookup "HUSTR_85"
 {
 	titlepatch = "CWILV00"
 	next = "MAP86"
@@ -1134,7 +1134,7 @@ map MAP85 lookup "HUSTR_1"
 	sky1 = "SKY85"
 	cluster = 8
 	par = 30
-	music = "D_ICZ"
+	music = "D_GHZ3"
         ForceNoSkyStretch
 }
 
