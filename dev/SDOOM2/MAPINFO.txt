@@ -10,6 +10,11 @@ defaultmap
 	sucktime = 1
 }
 
+gameinfo
+{
+	borderflat = "RW22_3"
+}
+
 // Sonic World
 map MAP00 lookup "HUSTR_0"
 {
@@ -31,7 +36,7 @@ map MAP01 lookup "HUSTR_1"
 	secretnext = "MAP02"
 	sky1 = "SKY1"
 	cluster = 8
-	par = 30
+	par = 35
 	music = "D_ICZ"
         ForceNoSkyStretch
 }
@@ -44,7 +49,7 @@ map MAP02 lookup "HUSTR_2"
 	secretnext = "MAP03"
 	sky1 = "SKY2"
 	cluster = 8
-	par = 90
+	par = 40
 	music = "D_ICZ"
         ForceNoSkyStretch
 }
@@ -57,7 +62,7 @@ map MAP03 lookup "HUSTR_3"
 	secretnext = "MAP04"
 	sky1 = "SKY3"
 	cluster = 8
-	par = 120
+	par = 45
 	music = "D_FBZ1"
         ForceNoSkyStretch
 }
@@ -70,7 +75,7 @@ map MAP04 lookup "HUSTR_4"
 	secretnext = "MAP05"
 	sky1 = "SKY4"
 	cluster = 8
-	par = 120
+	par = 60
 	music = "D_FBZ2"
         ForceNoSkyStretch
 }
@@ -83,7 +88,7 @@ map MAP05 lookup "HUSTR_5"
 	secretnext = "MAP06"
 	sky1 = "SKY5"
 	cluster = 8
-	par = 90
+	par = 40
 	music = "D_SONIC"
         ForceNoSkyStretch
 }
@@ -96,7 +101,7 @@ map MAP06 lookup "HUSTR_6"
 	secretnext = "MAP07"
 	sky1 = "SKY6"
 	cluster = 8
-	par = 150
+	par = 50
 	sucktime = 1
 	music = "D_SPEC1"
         ForceNoSkyStretch
@@ -124,7 +129,7 @@ map MAP08 lookup "HUSTR_8"
 	secretnext = "MAP09"
 	sky1 = "SKY8"
 	cluster = 8
-	par = 120
+	par = 60
 	music = "D_MGZ2"
         ForceNoSkyStretch
 }
@@ -137,7 +142,7 @@ map MAP09 lookup "HUSTR_9"
 	secretnext = "MAP10"
 	sky1 = "SKY9"
 	cluster = 8
-	par = 270
+	par = 120
 	music = "D_CNZ1"
         ForceNoSkyStretch
 }
@@ -150,7 +155,7 @@ map MAP10 lookup "HUSTR_10"
 	secretnext = "MAP11"
 	sky1 = "SKY10"
 	cluster = 8
-	par = 90
+	par = 80
 	music = "D_CNZ2"
         ForceNoSkyStretch
 }
@@ -164,7 +169,7 @@ map MAP11 lookup "HUSTR_11"
 	secretnext = "MAP12"
 	sky1 = "SKY11"
 	cluster = 8
-	par = 210
+	par = 75
 	music = "D_HCZ1"
         ForceNoSkyStretch
 }
@@ -177,7 +182,7 @@ map MAP12 lookup "HUSTR_12"
 	secretnext = "MAP13"
 	sky1 = "SKY12"
 	cluster = 8
-	par = 150
+	par = 180
 	music = "D_HCZ2"
         ForceNoSkyStretch
 }
@@ -190,7 +195,7 @@ map MAP13 lookup "HUSTR_13"
 	secretnext = "MAP14"
 	sky1 = "SKY13"
 	cluster = 8
-	par = 150
+	par = 110
 	music = "D_LBZ1"
         ForceNoSkyStretch
 }
@@ -203,7 +208,7 @@ map MAP14 lookup "HUSTR_14"
 	secretnext = "MAP15"
 	sky1 = "SKY14"
 	cluster = 8
-	par = 150
+	par = 20
 	music = "D_LBZ2"
         ForceNoSkyStretch
 }
