@@ -21,13 +21,7 @@ Game Doom
   RenderStyle "Normal"
 }
 
-ACTOR GFZFlower : HeartColumn replaces HeartColumn
-{
-Game Doom
-  -SOLID
-}
-
-Actor SSZBDecoA : HeartColumn
+Actor SSZBDecoA 100
 {
 	Height 40
     Radius 20
@@ -40,12 +34,28 @@ Actor SSZBDecoA : HeartColumn
 	}
 }
 
-Actor SSZBDecoB : SSZBDecoA
+Actor SSZBDecoB 101
 {
-  States
-  {
-  Spawn:
-    SSBB A 10
-    Loop
-  }
+	Height 40
+    Radius 20
+	-SOLID
+	States
+	{
+		Spawn:
+		SSBB A 10
+		Loop
+	}
+}
+
+Actor GHZDecoA 102
+{
+	Height 40
+    Radius 20
+	-SOLID
+	States
+	{
+		Spawn:
+		GHZA A 10
+		Loop
+	}
 }
