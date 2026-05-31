@@ -1,6 +1,6 @@
 gameinfo
 {
-	PlayerClasses = "SD2SonicPlayer", "SD2TailsPlayer", "SD2KnuxPlayer", "SD2MetalPlayer"
+	PlayerClasses = "SD2SonicPlayer", "SD2TailsPlayer", "SD2KnuxPlayer", "SD2MechaPlayer"
 }
 
 clearepisodes

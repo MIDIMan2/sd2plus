@@ -3,47 +3,34 @@
 
 class SD2Player : DoomPlayer
 {
-	uint ClipCapacity;
-	property ClipCapacity: ClipCapacity;
-	uint ShellCapacity;
-	property ShellCapacity: ShellCapacity;
-	uint RocketCapacity;
-	property RocketCapacity: RocketCapacity;
-	uint CellCapacity;
-	property CellCapacity: CellCapacity;
-	
-	virtual void SD2SetAmmoCapacity(uint mul = 1)
+	// Version of SetAmmoCapacity that also sets backpack capacity
+	virtual void SD2SetAmmoCapacity(class<Ammo> type, int amount)
 	{
-		self.SetAmmoCapacity("Clip", ClipCapacity * mul);
-		self.SetAmmoCapacity("Shell", ShellCapacity * mul);
-		self.SetAmmoCapacity("RocketAmmo", RocketCapacity * mul);
-		self.SetAmmoCapacity("Cell", CellCapacity * mul);
-	}
-	
-	override void PostBeginPlay()
-	{
-		Super.PostBeginPlay();
-		SD2SetAmmoCapacity();
+		if (type != NULL)
+		{
+			let item = Ammo(FindInventory(type));
+			if (item != NULL)
+			{
+				item.MaxAmount = amount;
+				item.BackpackMaxAmount = 2 * amount;
+			}
+			else
+			{
+				item = Ammo(GiveInventoryType(type));
+				if (item != NULL)
+				{
+					item.MaxAmount = amount;
+					item.BackpackMaxAmount = 2 * amount;
+					item.Amount = 0;
+				}
+			}
+		}
 	}
 
 	Default
 	{
 		Player.MaxHealth 200;
 		Player.CrouchSprite "";
-// 		Player.StartItem "SD2Pistol";
-// 		Player.StartItem "Clip", 50;
-// 		Player.StartItem "Fist";
-		Player.WeaponSlot 1, "Fist", "SD2Chainsaw";
-// 		Player.WeaponSlot 2, "SD2Pistol";
-// 		Player.WeaponSlot 3, "SD2Shotgun", "SD2SuperShotgun";
-// 		Player.WeaponSlot 4, "SD2Chaingun";
-// 		Player.WeaponSlot 5, "SD2RocketLauncher";
-// 		Player.WeaponSlot 6, "SD2PlasmaRifle";
-// 		Player.WeaponSlot 7, "SD2BFG9000";
-		SD2Player.ClipCapacity 200;
-		SD2Player.ShellCapacity 50;
-		SD2Player.RocketCapacity 50;
-		SD2Player.CellCapacity 300;
 	}
 }
 
@@ -55,10 +42,20 @@ class SD2SonicPlayer : SD2Player
 		Player.DisplayName "Sonic";
 		Player.Face "STF";
 		Player.ColorRange 192,207;
-		SD2Player.ClipCapacity 100;
-		SD2Player.ShellCapacity 30;
-		SD2Player.RocketCapacity 30;
-		SD2Player.CellCapacity 100;
+		Player.StartItem "SD2SonicPistol";
+		Player.StartItem "Clip", 50;
+		Player.StartItem "Fist";
+		Player.WeaponSlot 1, "Fist", "SD2SonicChainsaw";
+		Player.WeaponSlot 2, "SD2SonicPistol";
+		Player.WeaponSlot 3, "SD2SonicShotgun", "SuperShotgun";
+	}
+	
+	override void PostBeginPlay()
+	{
+		SD2SetAmmoCapacity("Clip", 100);
+		SD2SetAmmoCapacity("Shell", 30);
+		SD2SetAmmoCapacity("RocketAmmo", 30);
+		SD2SetAmmoCapacity("Cell", 150);
 	}
 	
 	States
@@ -106,6 +103,12 @@ class SD2TailsPlayer : SD2Player
 		Player.DisplayName "Tails";
 		Player.Face "TTF";
 		Player.SoundClass "tails";
+		Player.StartItem "SD2TailsPistol";
+		Player.StartItem "Clip", 50;
+		Player.StartItem "SD2TailsFist";
+		Player.WeaponSlot 1, "SD2TailsFist", "SD2TailsChainsaw";
+		Player.WeaponSlot 2, "SD2TailsPistol";
+		Player.WeaponSlot 3, "Shotgun", "SuperShotgun";
 	}
 
 	States
@@ -153,6 +156,12 @@ class SD2KnuxPlayer : SD2Player
 		Player.DisplayName "Knuckles";
 		Player.Face "KTF";
 		Player.SoundClass "Knuckles";
+		Player.StartItem "SD2KnuxPistol";
+		Player.StartItem "Clip", 50;
+		Player.StartItem "SD2KnuxFist";
+		Player.WeaponSlot 1, "SD2KnuxFist", "SD2KnuxChainsaw";
+		Player.WeaponSlot 2, "SD2KnuxPistol";
+		Player.WeaponSlot 3, "SD2KnuxShotgun", "SuperShotgun";
 	}
 
 	States
@@ -192,13 +201,21 @@ class SD2KnuxPlayer : SD2Player
 	}
 }
 
-class SD2MetalPlayer : SD2Player
+class SD2MechaPlayer : SD2Player
 {
 	Default
 	{
 		Speed 1.75;
 		Player.DisplayName "Mecha Sonic";
 		Player.Face "MTF";
+	}
+	
+	override void PostBeginPlay()
+	{
+		SD2SetAmmoCapacity("Clip", 300);
+		SD2SetAmmoCapacity("Shell", 75);
+		SD2SetAmmoCapacity("RocketAmmo", 75);
+		SD2SetAmmoCapacity("Cell", 450);
 	}
 
 	States

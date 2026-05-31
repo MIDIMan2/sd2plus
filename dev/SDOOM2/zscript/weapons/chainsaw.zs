@@ -1,37 +1,42 @@
 // Sonic Doom 2 - Chainsaw
 
-class SD2Chainsaw : CustomInventory replaces Chainsaw
-{
-	States
-	{
-		Pickup:
-			CSAW A 0 {
-				if (self is "SD2SonicPlayer")
-				{
-					A_GiveInventory("SD2SonicChainsaw");
-				}
-				else if (self is "SD2TailsPlayer")
-				{
-					A_GiveInventory("SD2TailsChainsaw");
-				}
-				else if (self is "SD2KnuxPlayer")
-				{
-					A_GiveInventory("SD2KnuxChainsaw");
-				}
-				else
-				{
-					A_GiveInventory("Chainsaw");
-				}
-			}
-			Stop;
-		Spawn:
-			CSAW A -1;
-			Stop;
-	}
-}
+// class SD2Chainsaw : CustomInventory replaces Chainsaw
+// {
+// 	States
+// 	{
+// 		Pickup:
+// 			CSAW A 0 {
+// 				if (self is "SD2SonicPlayer")
+// 				{
+// 					A_GiveInventory("SD2SonicChainsaw");
+// 				}
+// 				else if (self is "SD2TailsPlayer")
+// 				{
+// 					A_GiveInventory("SD2TailsChainsaw");
+// 				}
+// 				else if (self is "SD2KnuxPlayer")
+// 				{
+// 					A_GiveInventory("SD2KnuxChainsaw");
+// 				}
+// 				else
+// 				{
+// 					A_GiveInventory("Chainsaw");
+// 				}
+// 			}
+// 			Stop;
+// 		Spawn:
+// 			CSAW A -1;
+// 			Stop;
+// 	}
+// }
 
 class SD2SonicChainsaw : Chainsaw
 {
+	Default
+	{
+		Inventory.RestrictedTo "SD2SonicPlayer";
+	}
+	
 	States
 	{
 		Ready:
@@ -54,6 +59,11 @@ class SD2SonicChainsaw : Chainsaw
 
 class SD2TailsChainsaw : Chainsaw
 {
+	Default
+	{
+		Inventory.RestrictedTo "SD2TailsPlayer";
+	}
+	
 	States
 	{
 		Ready:
@@ -74,6 +84,11 @@ class SD2TailsChainsaw : Chainsaw
 
 class SD2KnuxChainsaw : Chainsaw
 {
+	Default
+	{
+		Inventory.RestrictedTo "SD2KnuxPlayer";
+	}
+	
 	States
 	{
 		Ready:
