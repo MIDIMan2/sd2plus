@@ -52,6 +52,7 @@ class SD2SonicPlayer : SD2Player
 	
 	override void PostBeginPlay()
 	{
+		Super.PostBeginPlay();
 		SD2SetAmmoCapacity("Clip", 100);
 		SD2SetAmmoCapacity("Shell", 30);
 		SD2SetAmmoCapacity("RocketAmmo", 30);
@@ -212,6 +213,7 @@ class SD2MechaPlayer : SD2Player
 	
 	override void PostBeginPlay()
 	{
+		Super.PostBeginPlay();
 		SD2SetAmmoCapacity("Clip", 300);
 		SD2SetAmmoCapacity("Shell", 75);
 		SD2SetAmmoCapacity("RocketAmmo", 75);

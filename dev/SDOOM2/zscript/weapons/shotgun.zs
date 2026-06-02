@@ -1,57 +1,28 @@
 // Sonic Doom 2 - Shotgun
 
-// TODO: Figure out how to prevent players from picking this up if they have max ammo
+// TODO: Override TryPickup to make this slightly less hacky
 class SD2Shotgun : Shotgun replaces Shotgun
 {
-	override Inventory CreateCopy(Actor other)
+	override void AttachToOwner(Actor other)
 	{
-		Inventory copy;
-
-		if (!IsCreatingLocalCopy())
-			Amount = MIN(Amount, MaxAmount);
-		if (GoAway())
+		let newShotgunClass = "Shotgun";
+		if (other != NULL)
 		{
-			copy = Inventory(Spawn(GetClass()));
-			copy.Amount = Amount;
-			copy.MaxAmount = MaxAmount;
+			if (other is "SD2SonicPlayer")
+			{
+				newShotgunClass = "SD2SonicShotgun";
+			}
+			else if (other is "SD2KnuxPlayer")
+			{
+				newShotgunClass = "SD2KnuxShotgun";
+			}
 		}
-		else
-		{
-			copy = self;
-		}
-
-		Weapon copy2 = Weapon(copy);
-		if (copy2 != self && copy2 != null)
-		{
-			copy2.AmmoGive1 = AmmoGive1;
-			copy2.AmmoGive2 = AmmoGive2;
-		}
-		Console.PrintF(copy2.GetClassName());
-		return copy2;
+		Super.AttachToOwner(other);
+		Weapon newShotgun = Weapon(Spawn(newShotgunClass));
+		newShotgun.AmmoGive1 = 0;
+		newShotgun.AmmoGive2 = 0;
+		newShotgun.AttachToOwner(other);
 	}
-	
-	// States
-	// {
-	// 	Pickup:
-	// 		SHOT A 0 {
-	// 			if (self is "SD2SonicPlayer")
-	// 			{
-	// 				A_GiveInventory("SD2SonicShotgun");
-	// 			}
-	// 			else if (self is "SD2KnuxPlayer")
-	// 			{
-	// 				A_GiveInventory("SD2KnuxShotgun");
-	// 			}
-	// 			else
-	// 			{
-	// 				A_GiveInventory("Shotgun");
-	// 			}
-	// 		}
-	// 		Stop;
-	// 	Spawn:
-	// 		SHOT A -1;
-	// 		Stop;
-	// }
 }
 
 class SD2SonicShotgun : Shotgun
