@@ -1,34 +1,27 @@
 // Sonic Doom 2 - Chainsaw
 
-// class SD2Chainsaw : CustomInventory replaces Chainsaw
-// {
-// 	States
-// 	{
-// 		Pickup:
-// 			CSAW A 0 {
-// 				if (self is "SD2SonicPlayer")
-// 				{
-// 					A_GiveInventory("SD2SonicChainsaw");
-// 				}
-// 				else if (self is "SD2TailsPlayer")
-// 				{
-// 					A_GiveInventory("SD2TailsChainsaw");
-// 				}
-// 				else if (self is "SD2KnuxPlayer")
-// 				{
-// 					A_GiveInventory("SD2KnuxChainsaw");
-// 				}
-// 				else
-// 				{
-// 					A_GiveInventory("Chainsaw");
-// 				}
-// 			}
-// 			Stop;
-// 		Spawn:
-// 			CSAW A -1;
-// 			Stop;
-// 	}
-// }
+// TODO: Override TryPickup to make this slightly less hacky
+class SD2Chainsaw : Chainsaw replaces Chainsaw
+{
+	override void AttachToOwner(Actor other)
+	{
+		let newClass = "Chainsaw";
+		if (other != NULL)
+		{
+			if (other is "SD2SonicPlayer")
+				newClass = "SD2SonicChainsaw";
+			else if (other is "SD2TailsPlayer")
+				newClass = "SD2TailsChainsaw";
+			else if (other is "SD2KnuxPlayer")
+				newClass = "SD2KnuxChainsaw";
+		}
+		Super.AttachToOwner(other);
+		Weapon newWeapon = Weapon(Spawn(newClass));
+		newWeapon.AmmoGive1 = 0;
+		newWeapon.AmmoGive2 = 0;
+		newWeapon.AttachToOwner(other);
+	}
+}
 
 class SD2SonicChainsaw : Chainsaw
 {
@@ -36,7 +29,7 @@ class SD2SonicChainsaw : Chainsaw
 	{
 		Inventory.RestrictedTo "SD2SonicPlayer";
 	}
-	
+
 	States
 	{
 		Ready:
@@ -63,7 +56,7 @@ class SD2TailsChainsaw : Chainsaw
 	{
 		Inventory.RestrictedTo "SD2TailsPlayer";
 	}
-	
+
 	States
 	{
 		Ready:
@@ -88,7 +81,7 @@ class SD2KnuxChainsaw : Chainsaw
 	{
 		Inventory.RestrictedTo "SD2KnuxPlayer";
 	}
-	
+
 	States
 	{
 		Ready:

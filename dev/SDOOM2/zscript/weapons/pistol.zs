@@ -1,34 +1,26 @@
-// Sonic Doom 2 - Chainsaw
+// Sonic Doom 2 - Pistol
 
-// class SD2Pistol : CustomInventory replaces Pistol
-// {
-// 	States
-// 	{
-// 		Pickup:
-// 			PIST A 0 {
-// 				if (self is "SD2SonicPlayer")
-// 				{
-// 					A_GiveInventory("SD2SonicPistol");
-// 				}
-// 				else if (self is "SD2TailsPlayer")
-// 				{
-// 					A_GiveInventory("SD2TailsPistol");
-// 				}
-// 				else if (self is "SD2KnuxPlayer")
-// 				{
-// 					A_GiveInventory("SD2KnuxPistol");
-// 				}
-// 				else
-// 				{
-// 					A_GiveInventory("Pistol");
-// 				}
-// 			}
-// 			Stop;
-// 		Spawn:
-// 			PIST A -1;
-// 			Stop;
-// 	}
-// }
+class SD2Pistol : Pistol replaces Pistol
+{
+	override void AttachToOwner(Actor other)
+	{
+		let newClass = "Pistol";
+		if (other != NULL)
+		{
+			if (other is "SD2SonicPlayer")
+				newClass = "SD2SonicPistol";
+			else if (other is "SD2TailsPlayer")
+				newClass = "SD2TailsPistol";
+			else if (other is "SD2KnuxPlayer")
+				newClass = "SD2KnuxPistol";
+		}
+		Super.AttachToOwner(other);
+		Weapon newWeapon = Weapon(Spawn(newClass));
+		newWeapon.AmmoGive1 = 0;
+		newWeapon.AmmoGive2 = 0;
+		newWeapon.AttachToOwner(other);
+	}
+}
 
 class SD2SonicPistol : Pistol
 {
@@ -36,7 +28,7 @@ class SD2SonicPistol : Pistol
 	{
 		Inventory.RestrictedTo "SD2SonicPlayer";
 	}
-	
+
 	States
 	{
 		Fire:
@@ -59,7 +51,7 @@ class SD2TailsPistol : Pistol
 	{
 		Inventory.RestrictedTo "SD2TailsPlayer";
 	}
-	
+
 	States
 	{
 		Ready:
@@ -86,7 +78,7 @@ class SD2KnuxPistol : Pistol
 	{
 		Inventory.RestrictedTo "SD2KnuxPlayer";
 	}
-	
+
 	States
 	{
 		Ready:

@@ -4,9 +4,9 @@ class SD2TailsFist : Fist
 {
 	Default
 	{
-		Inventory.RestrictedTo "SD2SonicPlayer";
+		Inventory.RestrictedTo "SD2TailsPlayer";
 	}
-	
+
 	States
 	{
 		Ready:
@@ -30,6 +30,11 @@ class SD2TailsFist : Fist
 
 class SD2KnuxFist : Fist
 {
+	Default
+	{
+		Inventory.RestrictedTo "SD2KnuxPlayer";
+	}
+
 	States
 	{
 		Ready:

@@ -5,23 +5,24 @@ class SD2Shotgun : Shotgun replaces Shotgun
 {
 	override void AttachToOwner(Actor other)
 	{
-		let newShotgunClass = "Shotgun";
+		let newClass = "Shotgun";
 		if (other != NULL)
 		{
 			if (other is "SD2SonicPlayer")
-			{
-				newShotgunClass = "SD2SonicShotgun";
-			}
+				newClass = "SD2SonicShotgun";
 			else if (other is "SD2KnuxPlayer")
-			{
-				newShotgunClass = "SD2KnuxShotgun";
-			}
+				newClass = "SD2KnuxShotgun";
 		}
 		Super.AttachToOwner(other);
-		Weapon newShotgun = Weapon(Spawn(newShotgunClass));
-		newShotgun.AmmoGive1 = 0;
-		newShotgun.AmmoGive2 = 0;
-		newShotgun.AttachToOwner(other);
+		Weapon newWeapon = Weapon(Spawn(newClass));
+		newWeapon.AmmoGive1 = 0;
+		newWeapon.AmmoGive2 = 0;
+		newWeapon.AttachToOwner(other);
+	}
+
+	Default
+	{
+		Weapon.SelectionOrder 9999; // TODO: Remove this awful hack when I figure out TryPickup
 	}
 }
 
