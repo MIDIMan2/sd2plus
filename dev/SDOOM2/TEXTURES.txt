@@ -4732,6 +4732,21 @@ Texture PPANIC3, 64, 64
 	Patch PPANIC3, 0, 0
 }
 
+Texture PPANIC4, 64, 64
+{
+	Patch PPANIC4, 0, 0
+}	
+
+Texture PPANIC5, 64, 64
+{
+	Patch PPANIC5, 0, 0
+}	
+
+Texture PPANIC6, 64, 64
+{
+	Patch PPANIC6, 0, 0
+}
+
 // skies
 
 Texture SKY53, 256, 128
