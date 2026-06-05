@@ -32,7 +32,7 @@ class SD2Chainsaw : SD2Weapon replaces Chainsaw
 			SAWG B 0 A_ReFire;
 			Goto Ready;
 		Spawn:
-			CSAW A -1;
+			SSAW A -1;
 			Stop;
 	}
 
