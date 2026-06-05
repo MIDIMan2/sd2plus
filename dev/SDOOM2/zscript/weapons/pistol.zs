@@ -54,11 +54,20 @@ class SD2SonicPistol : SD2Pistol
 {
 	States
 	{
+		Ready:
+			PSGS A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			PSGS A 1 A_Lower;
+			Loop;
+		Select:
+			PSGS A 1 A_Raise;
+			Loop;
 		Fire:
-			PISG A 1;
-			PISG B 6 A_FirePistol;
-			PISG C 4;
-			PISG B 5 A_ReFire;
+			PSGS A 1;
+			PSGS B 6 A_FirePistol;
+			PSGS C 4;
+			PSGS B 5 A_ReFire;
 			Goto Ready;
 		Flash:
 			PISF A 1 Bright A_Light1;

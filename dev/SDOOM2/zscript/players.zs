@@ -44,8 +44,8 @@ class SD2SonicPlayer : SD2Player
 		Player.ColorRange 192,207;
 		Player.StartItem "SD2SonicPistol";
 		Player.StartItem "Clip", 50;
-		Player.StartItem "SD2Fist";
-		Player.WeaponSlot 1, "SD2Fist", "SD2SonicChainsaw";
+		Player.StartItem "SD2SonicFist";
+		Player.WeaponSlot 1, "SD2SonicFist", "SD2SonicChainsaw";
 		Player.WeaponSlot 2, "SD2SonicPistol";
 		Player.WeaponSlot 3, "SD2SonicShotgun", "SD2SonicSuperShotgun";
 		Player.WeaponSlot 4, "SD2SonicChaingun";
@@ -113,7 +113,7 @@ class SD2TailsPlayer : SD2Player
 		Player.StartItem "SD2TailsFist";
 		Player.WeaponSlot 1, "SD2TailsFist", "SD2TailsChainsaw";
 		Player.WeaponSlot 2, "SD2TailsPistol";
-		Player.WeaponSlot 3, "SD2Shotgun", "SD2SuperShotgun";
+		Player.WeaponSlot 3, "SD2TailsShotgun", "SD2SuperShotgun";
 		Player.WeaponSlot 4, "SD2Chaingun";
 		Player.WeaponSlot 5, "SD2RocketLauncher";
 		Player.WeaponSlot 6, "SD2PlasmaRifle";

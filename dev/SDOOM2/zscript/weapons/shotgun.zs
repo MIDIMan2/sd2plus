@@ -46,6 +46,7 @@ class SD2Shotgun : SD2Weapon replaces Shotgun
 	override void BeginPlay()
 	{
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicShotgun");
+		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsShotgun");
 		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxShotgun");
 	}
 }
@@ -54,16 +55,50 @@ class SD2SonicShotgun : SD2Shotgun
 {
 	States
 	{
+		Ready:
+			SHTS A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			SHTS A 1 A_Lower;
+			Loop;
+		Select:
+			SHTS A 1 A_Raise;
+			Loop;
 		Fire:
-			SHTG A 1;
-			SHTG A 1 A_FireShotgun;
-			SHTG BCDCBA 1;
-			SHTG A 1 A_ReFire;
+			SHTS A 1;
+			SHTS A 1 A_FireShotgun;
+			SHTS BCDCBA 1;
+			SHTS A 1 A_ReFire;
 			Goto Ready;
 		Flash:
 			SHTF A 1 Bright A_Light1;
 			SHTF B 1 Bright A_Light2;
 			Goto LightDone;
+	}
+}
+
+class SD2TailsShotgun : SD2Shotgun
+{
+	States
+	{
+		Ready:
+			SHTT A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			SHTT A 1 A_Lower;
+			Loop;
+		Select:
+			SHTT A 1 A_Raise;
+			Loop;
+		Fire:
+			SHTT A 3;
+			SHTT A 7 A_FireShotgun;
+			SHTT BC 5;
+			SHTT D 4;
+			SHTT CB 5;
+			SHTT A 3;
+			SHTT A 7 A_ReFire;
+			Goto Ready;
 	}
 }
 

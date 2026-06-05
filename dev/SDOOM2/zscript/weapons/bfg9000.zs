@@ -58,11 +58,20 @@ class SD2SonicBFG9000 : SD2BFG9000
 {
     States
     {
+		Ready:
+			BFGS A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			BFGS A 1 A_Lower;
+			Loop;
+		Select:
+			BFGS A 1 A_Raise;
+			Loop;
         Fire:
-            BFGG A 5 A_BFGsound;
-            BFGG B 10 A_GunFlash;
-            BFGG B 10 A_FireBFG;
-            BFGG B 20 A_ReFire;
+            BFGS A 5 A_BFGsound;
+            BFGS B 10 A_GunFlash;
+            BFGS B 10 A_FireBFG;
+            BFGS B 20 A_ReFire;
             Goto Ready;
         Flash:
             BFGF A 5 Bright A_Light1;

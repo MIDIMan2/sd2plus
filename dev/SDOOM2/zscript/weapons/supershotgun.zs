@@ -60,17 +60,26 @@ class SD2SonicSuperShotgun : SD2SuperShotgun
 {
     States
     {
+        Ready:
+            SH2S A 1 A_WeaponReady;
+            Loop;
+        Deselect:
+            SH2S A 1 A_Lower;
+            Loop;
+        Select:
+            SH2S A 1 A_Raise;
+            Loop;
         Fire:
-            SHT2 A 1;
-            SHT2 A 1 A_FireShotgun2;
-            SHT2 B 1;
-            SHT2 C 1 A_CheckReload;
-            SHT2 D 1 A_OpenShotgun2;
-            SHT2 E 1;
-            SHT2 F 1 A_LoadShotgun2;
-            SHT2 G 1;
-            SHT2 H 1 A_CloseShotgun2;
-            SHT2 A 1 A_ReFire;
+            SH2S A 1;
+            SH2S A 1 A_FireShotgun2;
+            SH2S B 1;
+            SH2S C 1 A_CheckReload;
+            SH2S D 1 A_OpenShotgun2;
+            SH2S E 1;
+            SH2S F 1 A_LoadShotgun2;
+            SH2S G 1;
+            SH2S H 1 A_CloseShotgun2;
+            SH2S A 1 A_ReFire;
             Goto Ready;
         Flash:
             SHT2 I 1 Bright A_Light1;

@@ -57,9 +57,11 @@ class SD2Berserk : Berserk replaces Berserk
 		if (player == null || player.mo == null)
 			return;
 		
-		string fistName = "Fist";
+		string fistName = "SD2Fist";
 		
-		if (player.mo is "SD2TailsPlayer")
+		if (player.mo is "SD2SonicPlayer")
+			fistName = "SD2SonicFist";
+		else if (player.mo is "SD2TailsPlayer")
 			fistName = "SD2TailsFist";
 		else if (player.mo is "SD2KnuxPlayer")
 			fistName = "SD2KnuxFist";

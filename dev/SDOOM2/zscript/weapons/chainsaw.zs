@@ -49,19 +49,19 @@ class SD2SonicChainsaw : SD2Chainsaw
 	States
 	{
 		Ready:
-			SAWG C 1 A_WeaponReady;
-			SAWG D 4 A_WeaponReady;
+			SAWS C 1 A_WeaponReady;
+			SAWS D 4 A_WeaponReady;
 			Loop;
 		Deselect:
-			SAWG C 1 A_Lower;
+			SAWS C 1 A_Lower;
 			Loop;
 		Select:
-			SAWG C 1 A_Raise;
+			SAWS C 1 A_Raise;
 			Loop;
 		Fire:
-			SAWG A 1 A_Saw;
-			SAWG B 4 A_Saw;
-			SAWG B 0 A_ReFire;
+			SAWS A 1 A_Saw;
+			SAWS B 4 A_Saw;
+			SAWS B 0 A_ReFire;
 			Goto Ready;
 	}
 }

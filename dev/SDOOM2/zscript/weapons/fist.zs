@@ -36,8 +36,32 @@ class SD2Fist : SD2Weapon replaces Fist
 
 	override void BeginPlay()
 	{
+		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicFist");
 		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsFist");
 		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxFist");
+	}
+}
+
+class SD2SonicFist : SD2Fist
+{
+	States
+	{
+		Ready:
+			PUNS A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			PUNS A 1 A_Lower;
+			Loop;
+		Select:
+			PUNS A 1 A_Raise;
+			Loop;
+		Fire:
+			PUNS B 4;
+			PUNS C 4 A_Punch;
+			PUNS D 5;
+			PUNS C 4;
+			PUNS B 5 A_ReFire;
+			Goto Ready;
 	}
 }
 

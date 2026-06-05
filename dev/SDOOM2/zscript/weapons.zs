@@ -13,6 +13,7 @@ class SD2Weapon : Weapon
 
     override void AttachToOwner(Actor other)
 	{
+		// Get the proper weapon to give the player based on charToWeapon
 		let newClass = baseClass;
 		if (other != NULL)
 		{
@@ -51,35 +52,6 @@ class SD2Weapon : Weapon
 		return Super.HandlePickup(item);
 	}
 }
-
-// class SD2Weapon : Weapon replaces Weapon
-// {
-// 	override Inventory CreateCopy(Actor other)
-// 	{
-// 		Inventory copy;
-
-// 		if (!IsCreatingLocalCopy())
-// 			Amount = MIN(Amount, MaxAmount);
-// 		if (GoAway())
-// 		{
-// 			copy = Inventory(Spawn("SD2KnuxShotgun"));
-// 			copy.Amount = Amount;
-// 			copy.MaxAmount = MaxAmount;
-// 		}
-// 		else
-// 		{
-// 			copy = self;
-// 		}
-
-// 		Weapon copy2 = Weapon(copy);
-// 		if (copy2 != self && copy2 != null)
-// 		{
-// 			copy2.AmmoGive1 = AmmoGive1;
-// 			copy2.AmmoGive2 = AmmoGive2;
-// 		}
-// 		return copy2;
-// 	}
-// }
 
 #include "zscript/weapons/chainsaw.zs"
 #include "zscript/weapons/fist.zs"
