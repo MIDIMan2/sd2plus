@@ -37,7 +37,7 @@ map MAP01 lookup "HUSTR_1"
 	sky1 = "SKY1"
 	cluster = 8
 	par = 35
-	music = "D_ICZ"
+	music = "D_ICZ1"
         ForceNoSkyStretch
 }
 
@@ -50,7 +50,7 @@ map MAP02 lookup "HUSTR_2"
 	sky1 = "SKY2"
 	cluster = 8
 	par = 40
-	music = "D_ICZ"
+	music = "D_ICZ2"
         ForceNoSkyStretch
 }
 
@@ -248,7 +248,7 @@ map MAP17 lookup "HUSTR_17"
 	sky1 = "SKY17"
 	cluster = 8
 	par = 420
-	music = "D_TCZ"
+	music = "D_TCZ1"
         ForceNoSkyStretch
 }
 
@@ -261,7 +261,7 @@ map MAP18 lookup "HUSTR_18"
 	sky1 = "SKY18"
 	cluster = 8
 	par = 150
-	music = "D_TCZ"
+	music = "D_TCZ2"
         ForceNoSkyStretch
 }
 
