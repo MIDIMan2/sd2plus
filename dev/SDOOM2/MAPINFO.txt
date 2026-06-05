@@ -13,6 +13,7 @@ defaultmap
 gameinfo
 {
 	borderflat = "RW22_3"
+	PlayerClasses = "SD2SonicPlayer", "SD2TailsPlayer", "SD2KnuxPlayer", "SD2MechaPlayer"
 }
 
 // Sonic World

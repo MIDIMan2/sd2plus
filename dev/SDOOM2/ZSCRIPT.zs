@@ -1,0 +1,8 @@
+version "4.14"
+#include "zscript/replacements.zs"
+#include "zscript/projectiles.zs"
+#include "zscript/decoration.zs"
+#include "zscript/health.zs"
+#include "zscript/enemies.zs"
+#include "zscript/weapons.zs"
+#include "zscript/players.zs"

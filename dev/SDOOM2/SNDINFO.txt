@@ -1,0 +1,21 @@
+// Sonic Doom 2 - SNDINFO
+// Made by MIDIMan
+
+$playersound	player	male	*gibbed		dspdiehi
+$playersound	player	male	*jump		none
+
+$playersound	tails	male	*pain100	dstlpain
+$playersound	tails	male	*pain75		dstlpain
+$playersound	tails	male	*pain50		dstlpain
+$playersound	tails	male	*pain25		dstlpain
+$playersound	tails	male	*death		dstldeth
+$playersound	tails	male	*gibbed		dstldeth
+
+$playersound	knuckles	male	*pain100	dskxpain
+$playersound	knuckles	male	*pain75		dskxpain
+$playersound	knuckles	male	*pain50		dskxpain
+$playersound	knuckles	male	*pain25		dskxpain
+
+tails/pain	dstlpain
+tails/death	dstldeth
+knux/pain	dskxpain
