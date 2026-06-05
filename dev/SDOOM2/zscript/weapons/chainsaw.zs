@@ -1,35 +1,51 @@
 // Sonic Doom 2 - Chainsaw
 
-// TODO: Override TryPickup to make this slightly less hacky
-class SD2Chainsaw : Chainsaw replaces Chainsaw
-{
-	override void AttachToOwner(Actor other)
-	{
-		let newClass = "Chainsaw";
-		if (other != NULL)
-		{
-			if (other is "SD2SonicPlayer")
-				newClass = "SD2SonicChainsaw";
-			else if (other is "SD2TailsPlayer")
-				newClass = "SD2TailsChainsaw";
-			else if (other is "SD2KnuxPlayer")
-				newClass = "SD2KnuxChainsaw";
-		}
-		Super.AttachToOwner(other);
-		Weapon newWeapon = Weapon(Spawn(newClass));
-		newWeapon.AmmoGive1 = 0;
-		newWeapon.AmmoGive2 = 0;
-		newWeapon.AttachToOwner(other);
-	}
-}
-
-class SD2SonicChainsaw : Chainsaw
+class SD2Chainsaw : SD2Weapon replaces Chainsaw
 {
 	Default
 	{
-		Inventory.RestrictedTo "SD2SonicPlayer";
+		Weapon.Kickback 0;
+		Weapon.SelectionOrder 2200;
+		Weapon.UpSound "weapons/sawup";
+		Weapon.ReadySound "weapons/sawidle";
+		Inventory.PickupMessage "$GOTCHAINSAW";
+		Obituary "$OB_MPCHAINSAW";
+		Tag "$TAG_CHAINSAW";
+		+WEAPON.MELEEWEAPON
+		+WEAPON.NOAUTOSWITCHTO
+		SD2Weapon.BaseClass "SD2Chainsaw";
 	}
 
+	States
+	{
+		Ready:
+			SAWG CD 4 A_WeaponReady;
+			Loop;
+		Deselect:
+			SAWG C 1 A_Lower;
+			Loop;
+		Select:
+			SAWG C 1 A_Raise;
+			Loop;
+		Fire:
+			SAWG AB 4 A_Saw;
+			SAWG B 0 A_ReFire;
+			Goto Ready;
+		Spawn:
+			CSAW A -1;
+			Stop;
+	}
+
+	override void BeginPlay()
+	{
+		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicChainsaw");
+		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsChainsaw");
+		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxChainsaw");
+	}
+}
+
+class SD2SonicChainsaw : SD2Chainsaw
+{
 	States
 	{
 		Ready:
@@ -50,13 +66,8 @@ class SD2SonicChainsaw : Chainsaw
 	}
 }
 
-class SD2TailsChainsaw : Chainsaw
+class SD2TailsChainsaw : SD2Chainsaw
 {
-	Default
-	{
-		Inventory.RestrictedTo "SD2TailsPlayer";
-	}
-
 	States
 	{
 		Ready:
@@ -75,13 +86,8 @@ class SD2TailsChainsaw : Chainsaw
 	}
 }
 
-class SD2KnuxChainsaw : Chainsaw
+class SD2KnuxChainsaw : SD2Chainsaw
 {
-	Default
-	{
-		Inventory.RestrictedTo "SD2KnuxPlayer";
-	}
-
 	States
 	{
 		Ready:

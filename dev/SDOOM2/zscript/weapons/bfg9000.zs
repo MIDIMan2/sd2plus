@@ -1,31 +1,61 @@
 // Sonic Doom 2 - BFG9000
 
-// TODO: Override TryPickup to make this slightly less hacky
-class SD2BFG9000 : BFG9000 replaces BFG9000
+class SD2BFG9000 : SD2Weapon replaces BFG9000
 {
-	override void AttachToOwner(Actor other)
+	Default
 	{
-		let newClass = "BFG9000";
-		if (other != NULL)
-		{
-			if (other is "SD2SonicPlayer")
-				newClass = "SD2SonicBFG9000";
-		}
-		Super.AttachToOwner(other);
-		Weapon newWeapon = Weapon(Spawn(newClass));
-		newWeapon.AmmoGive1 = 0;
-		newWeapon.AmmoGive2 = 0;
-		newWeapon.AttachToOwner(other);
+		Height 20;
+		Weapon.SelectionOrder 2800;
+		Weapon.AmmoUse 40;
+		Weapon.AmmoGive 40;
+		Weapon.AmmoType "Cell";
+		+WEAPON.NOAUTOFIRE;
+		+WEAPON.BFG;
+		Inventory.PickupMessage "$GOTBFG9000";
+		Tag "$TAG_BFG9000";
+		SD2Weapon.BaseClass "SD2BFG9000";
+	}
+
+	States
+	{
+		Ready:
+			BFGG A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			BFGG A 1 A_Lower;
+			Loop;
+		Select:
+			BFGG A 1 A_Raise;
+			Loop;
+		Fire:
+			BFGG A 20 A_BFGsound;
+			BFGG B 10 A_GunFlash;
+			BFGG B 10 A_FireBFG;
+			BFGG B 20 A_ReFire;
+			Goto Ready;
+		Flash:
+			BFGF A 11 Bright A_Light1;
+			BFGF B 6 Bright A_Light2;
+			Goto LightDone;
+		Spawn:
+			BFUG A -1;
+			Stop;
+		OldFire:
+			BFGG A 10 A_BFGsound;
+			BFGG BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB 1 A_FireOldBFG;
+			BFGG B 0 A_Light0;
+			BFGG B 20 A_ReFire;
+			Goto Ready;
+	}
+
+	override void BeginPlay()
+	{
+		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicBFG9000");
 	}
 }
 
-class SD2SonicBFG9000 : BFG9000
+class SD2SonicBFG9000 : SD2BFG9000
 {
-    Default
-	{
-		Inventory.RestrictedTo "SD2SonicPlayer";
-	}
-
     States
     {
         Fire:

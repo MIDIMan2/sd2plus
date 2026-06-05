@@ -1,12 +1,48 @@
-// Sonic Doom 2 - Chainsaw
+// Sonic Doom 2 - Fist
 
-class SD2TailsFist : Fist
+class SD2Fist : SD2Weapon replaces Fist
 {
 	Default
 	{
-		Inventory.RestrictedTo "SD2TailsPlayer";
+		Weapon.SelectionOrder 3700;
+		Weapon.Kickback 100;
+		Obituary "$OB_MPFIST";
+		Tag "$TAG_FIST";
+		+WEAPON.WIMPY_WEAPON
+		+WEAPON.MELEEWEAPON
+		+WEAPON.NOAUTOSWITCHTO
+		SD2Weapon.BaseClass "SD2Fist";
 	}
 
+	States
+	{
+		Ready:
+			PUNG A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			PUNG A 1 A_Lower;
+			Loop;
+		Select:
+			PUNG A 1 A_Raise;
+			Loop;
+		Fire:
+			PUNG B 4;
+			PUNG C 4 A_Punch;
+			PUNG D 5;
+			PUNG C 4;
+			PUNG B 5 A_ReFire;
+			Goto Ready;
+	}
+
+	override void BeginPlay()
+	{
+		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsFist");
+		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxFist");
+	}
+}
+
+class SD2TailsFist : SD2Fist
+{
 	States
 	{
 		Ready:
@@ -28,13 +64,8 @@ class SD2TailsFist : Fist
 	}
 }
 
-class SD2KnuxFist : Fist
+class SD2KnuxFist : SD2Fist
 {
-	Default
-	{
-		Inventory.RestrictedTo "SD2KnuxPlayer";
-	}
-
 	States
 	{
 		Ready:

@@ -1,34 +1,57 @@
 // Sonic Doom 2 - Pistol
 
-class SD2Pistol : Pistol replaces Pistol
-{
-	override void AttachToOwner(Actor other)
-	{
-		let newClass = "Pistol";
-		if (other != NULL)
-		{
-			if (other is "SD2SonicPlayer")
-				newClass = "SD2SonicPistol";
-			else if (other is "SD2TailsPlayer")
-				newClass = "SD2TailsPistol";
-			else if (other is "SD2KnuxPlayer")
-				newClass = "SD2KnuxPistol";
-		}
-		Super.AttachToOwner(other);
-		Weapon newWeapon = Weapon(Spawn(newClass));
-		newWeapon.AmmoGive1 = 0;
-		newWeapon.AmmoGive2 = 0;
-		newWeapon.AttachToOwner(other);
-	}
-}
-
-class SD2SonicPistol : Pistol
+class SD2Pistol : SD2Weapon replaces Pistol
 {
 	Default
 	{
-		Inventory.RestrictedTo "SD2SonicPlayer";
+		Weapon.SelectionOrder 1900;
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 20;
+		Weapon.AmmoType "Clip";
+		Obituary "$OB_MPPISTOL";
+		+WEAPON.WIMPY_WEAPON
+		Inventory.Pickupmessage "$PICKUP_PISTOL_DROPPED";
+		Tag "$TAG_PISTOL";
+		SD2Weapon.BaseClass "SD2Pistol";
 	}
 
+	States
+	{
+		Ready:
+			PISG A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			PISG A 1 A_Lower;
+			Loop;
+		Select:
+			PISG A 1 A_Raise;
+			Loop;
+		Fire:
+			PISG A 4;
+			PISG B 6 A_FirePistol;
+			PISG C 4;
+			PISG B 5 A_ReFire;
+			Goto Ready;
+		Flash:
+			PISF A 7 Bright A_Light1;
+			Goto LightDone;
+			PISF A 7 Bright A_Light1;
+			Goto LightDone;
+		Spawn:
+			PIST A -1;
+			Stop;
+	}
+
+	override void BeginPlay()
+	{
+		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicPistol");
+		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsPistol");
+		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxPistol");
+	}
+}
+
+class SD2SonicPistol : SD2Pistol
+{
 	States
 	{
 		Fire:
@@ -45,13 +68,8 @@ class SD2SonicPistol : Pistol
 	}
 }
 
-class SD2TailsPistol : Pistol
+class SD2TailsPistol : SD2Pistol
 {
-	Default
-	{
-		Inventory.RestrictedTo "SD2TailsPlayer";
-	}
-
 	States
 	{
 		Ready:
@@ -72,13 +90,8 @@ class SD2TailsPistol : Pistol
 	}
 }
 
-class SD2KnuxPistol : Pistol
+class SD2KnuxPistol : SD2Pistol
 {
-	Default
-	{
-		Inventory.RestrictedTo "SD2KnuxPlayer";
-	}
-
 	States
 	{
 		Ready:

@@ -44,8 +44,8 @@ class SD2SonicPlayer : SD2Player
 		Player.ColorRange 192,207;
 		Player.StartItem "SD2SonicPistol";
 		Player.StartItem "Clip", 50;
-		Player.StartItem "Fist";
-		Player.WeaponSlot 1, "Fist", "SD2SonicChainsaw";
+		Player.StartItem "SD2Fist";
+		Player.WeaponSlot 1, "SD2Fist", "SD2SonicChainsaw";
 		Player.WeaponSlot 2, "SD2SonicPistol";
 		Player.WeaponSlot 3, "SD2SonicShotgun", "SD2SonicSuperShotgun";
 		Player.WeaponSlot 4, "SD2SonicChaingun";
@@ -113,11 +113,11 @@ class SD2TailsPlayer : SD2Player
 		Player.StartItem "SD2TailsFist";
 		Player.WeaponSlot 1, "SD2TailsFist", "SD2TailsChainsaw";
 		Player.WeaponSlot 2, "SD2TailsPistol";
-		Player.WeaponSlot 3, "Shotgun", "SuperShotgun";
-		Player.WeaponSlot 4, "Chaingun";
-		Player.WeaponSlot 5, "RocketLauncher";
-		Player.WeaponSlot 6, "PlasmaRifle";
-		Player.WeaponSlot 7, "BFG9000";
+		Player.WeaponSlot 3, "SD2Shotgun", "SD2SuperShotgun";
+		Player.WeaponSlot 4, "SD2Chaingun";
+		Player.WeaponSlot 5, "SD2RocketLauncher";
+		Player.WeaponSlot 6, "SD2PlasmaRifle";
+		Player.WeaponSlot 7, "SD2BFG9000";
 	}
 
 	States
@@ -170,11 +170,11 @@ class SD2KnuxPlayer : SD2Player
 		Player.StartItem "SD2KnuxFist";
 		Player.WeaponSlot 1, "SD2KnuxFist", "SD2KnuxChainsaw";
 		Player.WeaponSlot 2, "SD2KnuxPistol";
-		Player.WeaponSlot 3, "SD2KnuxShotgun", "SuperShotgun";
-		Player.WeaponSlot 4, "Chaingun";
-		Player.WeaponSlot 5, "RocketLauncher";
-		Player.WeaponSlot 6, "PlasmaRifle";
-		Player.WeaponSlot 7, "BFG9000";
+		Player.WeaponSlot 3, "SD2KnuxShotgun", "SD2SuperShotgun";
+		Player.WeaponSlot 4, "SD2Chaingun";
+		Player.WeaponSlot 5, "SD2RocketLauncher";
+		Player.WeaponSlot 6, "SD2PlasmaRifle";
+		Player.WeaponSlot 7, "SD2BFG9000";
 	}
 
 	States
@@ -221,13 +221,16 @@ class SD2MechaPlayer : SD2Player
 		Speed 1.75;
 		Player.DisplayName "Mecha Sonic";
 		Player.Face "MTF";
-		Player.WeaponSlot 1, "Fist", "Chainsaw";
-		Player.WeaponSlot 2, "Pistol";
-		Player.WeaponSlot 3, "Shotgun", "SuperShotgun";
+		Player.StartItem "SD2Pistol";
+		Player.StartItem "Clip", 50;
+		Player.StartItem "SD2Fist";
+		Player.WeaponSlot 1, "SD2Fist", "SD2Chainsaw";
+		Player.WeaponSlot 2, "SD2Pistol";
+		Player.WeaponSlot 3, "SD2Shotgun", "SD2SuperShotgun";
 		Player.WeaponSlot 4, "SD2MechaChaingun";
-		Player.WeaponSlot 5, "RocketLauncher";
+		Player.WeaponSlot 5, "SD2RocketLauncher";
 		Player.WeaponSlot 6, "SD2MechaPlasmaRifle";
-		Player.WeaponSlot 7, "BFG9000";
+		Player.WeaponSlot 7, "SD2BFG9000";
 	}
 	
 	override void PostBeginPlay()
