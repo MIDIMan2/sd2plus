@@ -21,7 +21,7 @@ class SD2Mario : WolfensteinSS replaces WolfensteinSS
 	States
 	{
 		Missile:
-			Goto See;
+			Stop;
 		Melee:
 			SSWV E 10 A_FaceTarget;
 			SSWV F 10 A_FaceTarget;
