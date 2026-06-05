@@ -40,6 +40,7 @@ class SD2PlasmaRifle : SD2Weapon replaces PlasmaRifle
 
     override void BeginPlay()
     {
+        Super.BeginPlay();
         charToWeapon.Insert("SD2SonicPlayer", "SD2SonicPlasmaRifle");
         charToWeapon.Insert("SD2MechaPlayer", "SD2MechaPlasmaRifle");
     }

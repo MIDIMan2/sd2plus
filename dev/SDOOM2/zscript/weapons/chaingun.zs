@@ -41,6 +41,7 @@ class SD2Chaingun : SD2Weapon replaces Chaingun
 
     override void BeginPlay()
 	{
+        Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicChaingun");
 		charToWeapon.Insert("SD2MechaPlayer", "SD2MechaChaingun");
 	}

@@ -45,6 +45,7 @@ class SD2Shotgun : SD2Weapon replaces Shotgun
 
 	override void BeginPlay()
 	{
+		Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicShotgun");
 		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsShotgun");
 		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxShotgun");

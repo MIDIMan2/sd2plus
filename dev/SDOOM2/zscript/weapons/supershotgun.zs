@@ -52,6 +52,7 @@ class SD2SuperShotgun : SD2Weapon replaces SuperShotgun
 
     override void BeginPlay()
 	{
+        Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicSuperShotgun");
 	}
 }

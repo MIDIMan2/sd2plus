@@ -38,6 +38,7 @@ class SD2Chainsaw : SD2Weapon replaces Chainsaw
 
 	override void BeginPlay()
 	{
+		Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicChainsaw");
 		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsChainsaw");
 		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxChainsaw");

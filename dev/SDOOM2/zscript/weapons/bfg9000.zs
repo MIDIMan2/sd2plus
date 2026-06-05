@@ -50,6 +50,7 @@ class SD2BFG9000 : SD2Weapon replaces BFG9000
 
 	override void BeginPlay()
 	{
+		Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicBFG9000");
 	}
 }

@@ -43,6 +43,7 @@ class SD2RocketLauncher : SD2Weapon replaces RocketLauncher
 
 	override void BeginPlay()
 	{
+		Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicRocketLauncher");
 	}
 }

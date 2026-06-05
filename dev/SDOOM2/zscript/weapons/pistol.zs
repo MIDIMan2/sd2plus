@@ -44,6 +44,7 @@ class SD2Pistol : SD2Weapon replaces Pistol
 
 	override void BeginPlay()
 	{
+		Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicPistol");
 		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsPistol");
 		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxPistol");

@@ -36,6 +36,7 @@ class SD2Fist : SD2Weapon replaces Fist
 
 	override void BeginPlay()
 	{
+		Super.BeginPlay();
 		charToWeapon.Insert("SD2SonicPlayer", "SD2SonicFist");
 		charToWeapon.Insert("SD2TailsPlayer", "SD2TailsFist");
 		charToWeapon.Insert("SD2KnuxPlayer", "SD2KnuxFist");
